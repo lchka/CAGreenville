@@ -16,6 +16,12 @@
   }
 }
 
+.navbar-text {
+  .btn {
+    margin-right: 10px; /* Adjust the margin-right for spacing between buttons */
+  }
+  margin-right: 20px; /* Adjust the margin-right for the whole .navbar-text */
+}
 // Custom colors and styles or other custom SCSS rules
 $custom-colors: (
   "my-primary-light": rgb(220, 183, 183),

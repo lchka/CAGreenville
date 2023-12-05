@@ -11858,4 +11858,11 @@ textarea.form-control-lg {
 .navbar .nav-link:hover {
   color: black; /* Change text color to black on hover */
   font-weight: bold; /* Add bold font weight on hover */
+}
+
+.navbar-text {
+  margin-right: 20px; /* Adjust the margin-right for the whole .navbar-text */
+}
+.navbar-text .btn {
+  margin-right: 10px; /* Adjust the margin-right for spacing between buttons */
 }/*# sourceMappingURL=main.css.map */

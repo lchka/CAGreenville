@@ -11874,17 +11874,15 @@ textarea.form-control-lg {
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: black;
   background-color: transparent;
-  border: 2px solid #000;
+  border: 1px solid #000;
   transition: all 0.3s ease;
 }
 .navbar .navbar-text .signUp.btn i {
-  font-size: 24px;
+  font-size: 28px;
   vertical-align: middle;
 }
 .navbar .navbar-text .signUp.btn i {
   padding-right: 13px;
-  font-size: 28px;
-  vertical-align: middle;
 }
 .navbar .navbar-text .signUp.btn:hover {
   background-color: #e0e0e0;
@@ -11896,17 +11894,15 @@ textarea.form-control-lg {
   font-size: 20px;
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: black;
-  background-color: #FFE399;
-  border: 2px solid #000;
+  background-color: #ffe399;
+  border: 1px solid #f1f1f1;
 }
 .navbar .navbar-text .logIn.btn i {
-  font-size: 24px;
+  font-size: 28px;
   vertical-align: middle;
 }
 .navbar .navbar-text .logIn.btn i {
   padding-right: 20px;
-  font-size: 28px;
-  vertical-align: middle;
 }
 .navbar .navbar-text .logIn.btn:hover {
   border-color: #000;

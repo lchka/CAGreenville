@@ -1,33 +1,26 @@
+// Import Bootstrap functions and variables
 @import "../node_modules/bootstrap/scss/functions";
-
-$primary: rgb(2, 58, 9);
-$enable-rounded: false;
-// $enable-shadows: true;
-
-$dark: rgb(255, 230, 172);
-$secondary: black;
-
-//variables and mixins
 @import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
 
-//custom colours
+// Other Bootstrap SCSS imports (mixins, etc.)
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Your custom SCSS
+.navbar {
+  .nav-link {
+    &:hover {
+      color: black; /* Change text color to black on hover */
+      font-weight: bold; /* Add bold font weight on hover */
+    }
+  }
+}
+
+// Custom colors and styles or other custom SCSS rules
 $custom-colors: (
   "my-primary-light": rgb(220, 183, 183),
   "secondary-light": rgb(50, 159, 9),
   "success": rgb(15, 170, 79),
 );
 
-//merge the colours
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
-@each $color, $val in theme-colors {
-  .bg-#{$color} {
-    background-color: $val;
-  }
-  .bg-#{$color}-light {
-    background-color: lighten($val, 40%);
-  }
-}
-//bs
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Rest of your custom styles...

@@ -12,24 +12,23 @@ $custom-colors: (
   "btn-outline-danger": #000000,
 );
 
-// Font size variable
-$navbar-font-size: 20px;
-
 // Button mixin for common button styles
 @mixin commonButtonStyles {
   $radius: 30px;
-  $padding: 5px 20px;
-  $font-size: 16px;
+  $padding: 2px 20px;
+  $font-size: 20px;
   $icon-size: 24px;
-  $font-family: 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-
+  $font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  $font-button-bold: 700;
+  font-weight: $font-button-bold;
   border-radius: $radius;
   padding: $padding;
   font-size: $font-size;
   font-family: $font-family;
 
   i {
-    font-size: $icon-size;
+    font-size: 28px;
     vertical-align: middle;
   }
 }
@@ -38,7 +37,6 @@ $navbar-font-size: 20px;
   width: 105px; /* Set the width to 45 pixels */
   /* Additional styles if needed */
 }
-
 
 // Custom navbar styles
 .navbar {
@@ -54,22 +52,27 @@ $navbar-font-size: 20px;
       background-color: transparent;
       border: 2px solid #000;
       transition: all 0.3s ease;
-
+      i {
+        padding-right: 13px;
+      }
       &:hover {
         background-color: #e0e0e0;
-        
       }
     }
 
     .logIn.btn {
       @include commonButtonStyles; // Use mixin for common button styles
       color: black;
-      background-color: yellow; // Reset background color to transparent
-    
+      background-color: #ffe399;
+      border: 2px solid #000;
+      i {
+        padding-right: 20px;
+      }
       &:hover {
-        background-color: yellow; // Change login background color to yellow on hover
+        // Change login background color to yellow on hover
         border-color: #000; // Ensure a border color for consistency
+        background-color: rgb(231, 207, 139);
       }
     }
-    }
   }
+}

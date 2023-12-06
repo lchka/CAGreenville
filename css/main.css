@@ -11861,7 +11861,16 @@ textarea.form-control-lg {
 }
 
 .navbar {
-  background-color: transparent;
+  backdrop-filter: blur(0px); /* Initial blur value for the navbar */
+  margin-bottom: 5px;
+}
+.navbar ul.navbar-nav.options li.nav-item a.nav-link {
+  font-size: 20px; /* Setting font size to 20px */
+  line-height: 30px; /* Maintain a consistent line height */
+  gap: 20px;
+}
+.navbar ul.navbar-nav.options li.nav-item a.nav-link:hover {
+  color: #ffe399;
 }
 .navbar .navbar-text {
   font-size: 20px;
@@ -11908,4 +11917,9 @@ textarea.form-control-lg {
 .navbar .navbar-text .logIn.btn:hover {
   border-color: #000;
   background-color: rgb(231, 207, 139);
+}
+
+.imageMain {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

@@ -32,6 +32,23 @@ $custom-colors: (
     vertical-align: middle;
   }
 }
+@mixin commonNavbarOptionStyles {
+  ul.navbar-nav.options {
+    li.nav-item {
+      a.nav-link {
+        font-size: 20px; /* Setting font size to 20px */
+        line-height: 30px; /* Maintain a consistent line height */
+        gap:20px;
+
+        &:hover {
+        color: #ffe399;
+        }
+      }
+
+    }
+  }
+}
+
 
 .navbar-brand img {
   width: 105px; /* Set the width to 45 pixels */
@@ -40,8 +57,11 @@ $custom-colors: (
 
 // Custom navbar styles
 .navbar {
-  background-color: transparent; // Set a default background color, change as per your design
-  // Additional navbar styles...
+  @include commonNavbarOptionStyles;
+  backdrop-filter: blur(0px); /* Initial blur value for the navbar */
+  margin-bottom: 5px;
+  
+   
 
   .navbar-text {
     font-size: 20px; // Applying the font size variable to navbar text
@@ -77,4 +97,8 @@ $custom-colors: (
       }
     }
   }
+}
+.imageMain {
+  background-image: url(../images/header.jpg);
+  background-size: cover;
 }

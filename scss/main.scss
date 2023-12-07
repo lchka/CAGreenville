@@ -181,14 +181,14 @@ footer {
   .left {
     color: rgb(202, 202, 202);
     i {
-      padding-right: 2px;
+      padding-right: 5px;
     }
   }
   .right{
     text-align: right;
     font-weight: 500;
     a {
-      padding: 5px;
+    padding-right: 5px;
       &:hover {
         color:rgb(90, 90, 90);
       }

@@ -11991,14 +11991,14 @@ footer .bottomSection .panel .panel01 a:hover {
   color: rgb(202, 202, 202);
 }
 .bottomFooter .left i {
-  padding-right: 2px;
+  padding-right: 5px;
 }
 .bottomFooter .right {
   text-align: right;
   font-weight: 500;
 }
 .bottomFooter .right a {
-  padding: 5px;
+  padding-right: 5px;
 }
 .bottomFooter .right a:hover {
   color: rgb(90, 90, 90);

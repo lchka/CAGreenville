@@ -11976,11 +11976,11 @@ footer .bottomSection .panel .panel01 {
   padding-bottom: 50px;
 }
 footer .bottomSection .panel .panel01 a {
-  color: #676767;
+  color: #7e7e7e;
 }
 footer .bottomSection .panel .panel01 a:hover {
-  color: #0f0f0f;
-  font-weight: 500;
+  color: #000000;
+  font-weight: 600;
 }
 
 .bottomFooter {

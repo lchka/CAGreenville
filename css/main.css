@@ -11859,7 +11859,10 @@ a {
   text-decoration: none;
 }
 
-/* Remove bullets from list items */
+.footer-bg-dark {
+  background-color: #272728;
+}
+
 ul {
   list-style: none;
   padding-left: 0; /* Optional: Remove default padding */
@@ -11969,18 +11972,34 @@ footer a {
 footer a:hover {
   color: #373737;
 }
-footer .bottomSection {
-  display: flex;
-  justify-content: center;
-  gap: 1px;
-}
-footer .bottomSection .panel {
+footer .bottomSection .panel .panel01 {
   padding-bottom: 50px;
 }
-footer .bottomSection .panel a {
+footer .bottomSection .panel .panel01 a {
   color: #676767;
 }
-footer .bottomSection .panel a:hover {
+footer .bottomSection .panel .panel01 a:hover {
   color: #0f0f0f;
   font-weight: 500;
+}
+
+.bottomFooter {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.bottomFooter .left {
+  color: rgb(202, 202, 202);
+}
+.bottomFooter .left i {
+  padding-right: 15px;
+}
+.bottomFooter .right {
+  text-align: right;
+  font-weight: 500;
+}
+.bottomFooter .right a {
+  padding: 5px;
+}
+.bottomFooter .right a:hover {
+  color: rgb(90, 90, 90);
 }/*# sourceMappingURL=main.css.map */

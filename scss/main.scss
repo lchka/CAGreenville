@@ -10,12 +10,15 @@ $custom-colors: (
   "secondary-light": rgb(50, 159, 9),
   "success": #fff7e2,
   "btn-outline-danger": #000000,
+  "bg-dark": #272728,
 );
 a {
   text-decoration: none;
 }
+.footer-bg-dark {
+  background-color: map-get($custom-colors, "bg-dark");
+}
 
-/* Remove bullets from list items */
 ul {
   list-style: none;
   padding-left: 0; /* Optional: Remove default padding */
@@ -156,20 +159,39 @@ footer {
     }
   }
   .bottomSection {
-    display: flex;
-    justify-content: center;
-   gap:1px;
     .panel {
-     
-      a {
-        color: #676767;
+      .panel01 {
+        a {
+          color: #676767;
 
-        &:hover {
-          color: #0f0f0f;
-          font-weight: 500;
+          &:hover {
+            color: #0f0f0f;
+            font-weight: 500;
+          }
         }
+        padding-bottom: 50px;
       }
-      padding-bottom: 50px;
+    }
+  }
+}
+
+.bottomFooter {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  .left {
+    color: rgb(202, 202, 202);
+    i {
+      padding-right: 15px;
+    }
+  }
+  .right{
+    text-align: right;
+    font-weight: 500;
+    a {
+      padding: 5px;
+      &:hover {
+        color:rgb(90, 90, 90);
+      }
     }
   }
 }

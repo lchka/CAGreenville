@@ -11874,8 +11874,7 @@ ul {
 }
 
 .navbar {
-  backdrop-filter: blur(1px); /* Initial blur value for the navbar */
-  margin-bottom: 5px;
+  backdrop-filter: blur(2px); /* Initial blur value for the navbar */
 }
 .navbar ul.navbar-nav.options li.nav-item a.nav-link {
   font-size: 20px; /* Setting font size to 20px */
@@ -11932,11 +11931,21 @@ ul {
   background-color: rgb(231, 207, 139);
 }
 
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: white; /* Color for mobile devices */
+  }
+}
 .imageMain {
   background-image: url(../images/header.jpg);
   background-size: cover;
 }
 
+@media (max-width: 767.98px) {
+  .imageMain {
+    background-image: url(../images/header.jpg);
+  }
+}
 .col-md-5 .input-group {
   width: 100%;
 }
@@ -11949,6 +11958,10 @@ ul {
 .col-md-5 .input-group .input-group-text {
   border: none;
   background-color: transparent;
+}
+
+.headerText {
+  padding-top: 50px;
 }
 
 footer {

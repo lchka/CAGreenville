@@ -12,6 +12,7 @@ $custom-colors: (
   "btn-outline-danger": #000000,
   "bg-dark": #272728,
 );
+
 a {
   text-decoration: none;
 }
@@ -67,8 +68,8 @@ ul {
 // Custom navbar styles
 .navbar {
   @include commonNavbarOptionStyles;
-  backdrop-filter: blur(1px); /* Initial blur value for the navbar */
-  margin-bottom: 5px;
+  backdrop-filter: blur(2px); /* Initial blur value for the navbar */
+
   // background-color: rgb(255, 255, 255,0.1);
 
   .navbar-text {
@@ -106,9 +107,20 @@ ul {
     }
   }
 }
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: white; /* Color for mobile devices */
+  }
+} //changes navbar colour in phone mode so that the navabr is able to be seen
 .imageMain {
   background-image: url(../images/header.jpg);
   background-size: cover;
+}
+@media (max-width: 767.98px) {
+  .imageMain {
+    background-image: url(../images/header.jpg);
+   
+  }
 }
 //search button
 .col-md-5 {
@@ -129,11 +141,11 @@ ul {
     }
   }
 }
-// Variables or mixins can be defined here if needed
+.headerText {
+  padding-top: 50px;
+}
 
-// Variables or mixins can be defined here if needed
-
-footer { 
+footer {
   background-color: #e6e6e6;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -159,7 +171,6 @@ footer {
     }
   }
   .bottomSection {
-    
     .panel {
       .panel01 {
         a {
@@ -185,13 +196,13 @@ footer {
       padding-right: 5px;
     }
   }
-  .right{
+  .right {
     text-align: right;
     font-weight: 500;
     a {
-    padding-right: 5px;
+      padding-right: 5px;
       &:hover {
-        color:rgb(90, 90, 90);
+        color: rgb(90, 90, 90);
       }
     }
   }

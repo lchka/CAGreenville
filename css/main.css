@@ -11874,15 +11874,26 @@ ul {
 }
 
 .navbar {
-  backdrop-filter: blur(2px); /* Initial blur value for the navbar */
+  backdrop-filter: blur(1px); /* Initial blur value for the navbar */
+}
+.navbar ul.navbar-nav.options li.nav-item {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .navbar ul.navbar-nav.options li.nav-item a.nav-link {
   font-size: 20px; /* Setting font size to 20px */
   line-height: 30px; /* Maintain a consistent line height */
-  gap: 20px;
+  font-weight: 500;
 }
 .navbar ul.navbar-nav.options li.nav-item a.nav-link:hover {
   color: #ffe399;
+}
+.navbar .icons {
+  font-size: 24px;
+  -webkit-text-stroke: 0.4px;
+}
+.navbar .icons i:hover {
+  color: #000;
 }
 .navbar .navbar-text {
   font-size: 20px;
@@ -11895,7 +11906,7 @@ ul {
   font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: black;
   background-color: transparent;
-  border: 1px solid #000;
+  border: 1px solid #505050;
   transition: all 0.3s ease;
 }
 .navbar .navbar-text .signUp.btn i {
@@ -11906,9 +11917,10 @@ ul {
   padding-right: 13px;
 }
 .navbar .navbar-text .signUp.btn:hover {
-  background-color: #e0e0e0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000000;
 }
-.navbar .navbar-text .logIn.btn {
+.navbar .logIn.btn {
   font-weight: 700;
   border-radius: 30px;
   padding: 2px 20px;
@@ -11919,16 +11931,16 @@ ul {
   border: 1px solid #f1f1f1;
   padding: 2px 26px;
 }
-.navbar .navbar-text .logIn.btn i {
+.navbar .logIn.btn i {
   font-size: 28px;
   vertical-align: middle;
 }
-.navbar .navbar-text .logIn.btn i {
+.navbar .logIn.btn i {
   padding-right: 20px;
+  -webkit-text-stroke: 1px;
 }
-.navbar .navbar-text .logIn.btn:hover {
-  border-color: #000;
-  background-color: rgb(231, 207, 139);
+.navbar .logIn.btn:hover {
+  border-color: #4e4e4e;
 }
 
 @media (max-width: 767.98px) {
@@ -11937,7 +11949,7 @@ ul {
   }
 }
 .imageMain {
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/headerCropped.jpg);
   background-size: cover;
 }
 

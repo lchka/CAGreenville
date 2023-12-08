@@ -16,10 +16,10 @@ $custom-colors: (
 a {
   text-decoration: none;
 }
+$theme-colors:map-merge($theme-colors,$custom-colors);
 .footer-bg-dark {
   background-color: map-get($custom-colors, "bg-dark");
 }
-
 ul {
   list-style: none;
   padding-left: 0; /* Optional: Remove default padding */
@@ -47,10 +47,13 @@ ul {
 @mixin commonNavbarOptionStyles {
   ul.navbar-nav.options {
     li.nav-item {
+      padding-right: 15px;
+      padding-left: 15px;
       a.nav-link {
         font-size: 20px; /* Setting font size to 20px */
         line-height: 30px; /* Maintain a consistent line height */
-        gap: 20px;
+
+        font-weight: 500;
 
         &:hover {
           color: #ffe399;
@@ -68,10 +71,19 @@ ul {
 // Custom navbar styles
 .navbar {
   @include commonNavbarOptionStyles;
-  backdrop-filter: blur(2px); /* Initial blur value for the navbar */
+  backdrop-filter: blur(1px); /* Initial blur value for the navbar */
 
   // background-color: rgb(255, 255, 255,0.1);
+  .icons {
+    font-size: 24px;
+    -webkit-text-stroke: 0.4px;
 
+    i {
+      &:hover {
+        color: #000;
+      }
+    }
+  }
   .navbar-text {
     font-size: 20px; // Applying the font size variable to navbar text
 
@@ -79,47 +91,49 @@ ul {
       @include commonButtonStyles; // Use mixin for common button styles
       color: black;
       background-color: transparent;
-      border: 1px solid #000;
+      border: 1px solid #505050;
       transition: all 0.3s ease;
       i {
         padding-right: 13px;
       }
       &:hover {
-        background-color: #e0e0e0;
-      }
-    }
-
-    .logIn.btn {
-      @include commonButtonStyles; // Use mixin for common button styles
-      color: black;
-      background-color: #ffe399;
-      border: 1px solid #f1f1f1;
-      padding: 2px 26px;
-
-      i {
-        padding-right: 20px;
-      }
-      &:hover {
-        // Change login background color to yellow on hover
-        border-color: #000; // Ensure a border color for consistency
-        background-color: rgb(231, 207, 139);
+        background-color: rgb(255, 255, 255, 0.5);
+        border: 1px solid #000000;
       }
     }
   }
+  .logIn.btn {
+    @include commonButtonStyles; // Use mixin for common button styles
+    color: black;
+    background-color: #ffe399;
+    border: 1px solid #f1f1f1;
+    padding: 2px 26px;
+
+    i {
+      padding-right: 20px;
+      -webkit-text-stroke: 1px;
+    }
+    &:hover {
+      // Change login background color to yellow on hover
+      border-color: #4e4e4e; // Ensure a border color for consistency
+    }
+  }
 }
+//changes navbar colour in phone mode so that the navabr is able to be seen
 @media (max-width: 767.98px) {
   .navbar {
     background-color: white; /* Color for mobile devices */
   }
-} //changes navbar colour in phone mode so that the navabr is able to be seen
+} 
+
+//background image
 .imageMain {
-  background-image: url(../images/header.jpg);
+  background-image: url(../images/headerCropped.jpg);
   background-size: cover;
 }
 @media (max-width: 767.98px) {
   .imageMain {
     background-image: url(../images/header.jpg);
-   
   }
 }
 //search button
@@ -144,7 +158,7 @@ ul {
 .headerText {
   padding-top: 50px;
 }
-
+//footer
 footer {
   background-color: #e6e6e6;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,

@@ -39,12 +39,14 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#">Shop</a>
 						</li>
-						<li class="nav-item">
-							<a><i class=" nav-link bi bi-search" href="#"></i></a>
-						</li>
-						<li class="nav-item">
-							<a><i class="nav-link bi bi-basket2" href="#"></i></a>
-						</li>
+						<div class="icons d-flex">
+							<li class="nav-item mx-2">
+								<a href="#"><i class=" nav-link bi bi-search"></i></a>
+							</li>
+							<li class="nav-item mx-2">
+								<a href="#"><i class="nav-link bi bi-basket2"></i></a>
+							</li>
+						</div>
 					</ul>
 
 					<!-- in order to have the same ones falling beside each other have them in navbar-text there scss for it inline-->
@@ -60,7 +62,7 @@
 			</div>
 		</nav>
 		<div class="container-fluid text-dark py-5 ">
-			<div class="container-xl">
+			<div class="container-lg">
 				<div class="row vh-50 d-flex align-items-center">
 					<div class="col-md-6">
 						<h1 class="fw-bold lh-2 display-1 headerText">
@@ -78,7 +80,7 @@
 								class="bi bi-box-arrow-in-right"></i>Login</button>
 					</div>
 					<div class="col-md-6 my-5">
-						<img src="images/headerMain.png" class="img-fluid" alt="" />
+						<img src="images/headerMain.png"  class="img-fluid" alt="" />
 					</div>
 
 				</div>
@@ -86,105 +88,87 @@
 		</div>
 	</header>
 	<main id="#main">
-		<div class="container-lg py-5">
-			<div class="row justify-content-md-center justify-content-sm-start my-5">
-				<div class="col-8">
-					<p class="text-md-center text-primary text-uppercase fw-bold fs-6">
-						<small>Get Started</small>
-					</p>
-					<p class="text-md-center fs-2 fw-semibold">
-						It really is such a great product - Elon would be so proud of us.
-						<span class="text-muted">We're a great bunch of people.</span>
-					</p>
-				</div>
+		<div class="container-fluid bg-dark py-5">
+			<div class="row text-center categoriesName">
+				<h2 style="color: white;">Categories</h2>
+				<hr>
 			</div>
-			<div class="row my-5 py-5">
-				<div class="col-md-4 col-sm-6 my-1">
-					<div class="card bg-primary text-light border-0">
-						<img src="images/card_1.png" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" class="btn btn-light text-dark fw-semibold">Go somewhere</a>
+			<div class="row">
+				<div id="carouselExample" class="carousel slide">
+					<div class="container-lg">
+						<div class="carousel-inner">
+							<div class="col-md-12">
+								<div class="carousel-item active page1">
+									<div class="row">
+										<div class="col-1"></div><!-- empty div -->
+								
+										<!-- Five carousel items, each taking up two columns -->
+										<div class="col-2 item item1">
+											<div class="carousel-item-content" style="background-color: #FF5733;">Item 1
+											</div>
+										</div>
+										<div class="col-2 item item2">
+											<div class="carousel-item-content" style="background-color: #C70039;">Item 2
+											</div>
+										</div>
+										<div class="col-2 item item3">
+											<div class="carousel-item-content" style="background-color: #900C3F;">Item 3
+											</div>
+										</div>
+										<div class="col-2 item item4">
+											<div class="carousel-item-content" style="background-color: #581845;">Item 4
+											</div>
+										</div>
+										<div class="col-2 item item5">
+											<div class="carousel-item-content" style="background-color: #0053b9;">Item 5
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item page2">
+									<div class="row">
+										<!-- Five carousel items, each taking up two columns -->
+										<div class="col-1"></div>
+										<div class="col-2 item item6">
+											<div class="carousel-item-content" style="background-color: #a333ff;">Item 6
+											</div>
+										</div>
+										<div class="col-2 item item7">
+											<div class="carousel-item-content" style="background-color: #0300c7;">Item 7
+											</div>
+										</div>
+										<div class="col-2 item item8">
+											<div class="carousel-item-content" style="background-color: #0c9029;">Item 8
+											</div>
+										</div>
+										<div class="col-2 item item9">
+											<div class="carousel-item-content" style="background-color: #582a18;">Item 9
+											</div>
+										</div>
+										<div class="col-2 item item10">
+											<div class="carousel-item-content" style="background-color: #222a17;">Item
+												10</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-				<div class="col-md-4 col-sm-6 my-1">
-					<div class="card">
-						<img src="images/card_2.png" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" class="btn btn-primary text-light fw-semibold">Go somewhere</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 my-1">
-					<div class="card">
-						<img src="images/card_3.png" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</p>
-							<a href="#" class="btn btn-my-primary-light text-light fw-semibold">Go somewhere</a>
-						</div>
-					</div>
-				</div>
+				<div class="col-1"></div> <!-- Skip one column -->
 			</div>
-			<hr class="border border-1 opacity-10 my-3" />
-			<div class="row my-5 justify-content-sm-center">
-				<div class="col-3 btn-group" role="group" aria-label="Basic mixed styles example">
-					<button type="button" class="btn btn-outline-warning border-0">
-						<i class="bi bi-star-fill fs-3"></i>
-					</button>
-					<button type="button" class="btn btn-outline-warning border-0">
-						<i class="bi bi-star-fill fs-3"></i>
-					</button>
-					<button type="button" class="btn btn-outline-warning border-0">
-						<i class="bi bi-star-fill fs-3"></i>
-					</button>
-					<button type="button" class="btn btn-outline-warning border-0">
-						<i class="bi bi-star-fill fs-3"></i>
-					</button>
-					<button type="button" class="btn btn-outline-warning border-0">
-						<i class="bi bi-star-fill fs-3"></i>
-					</button>
-				</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-4 py-2">
-					<h3>Title</h3>
-					<p class="text-secondary fw-3 fs-5">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-						dolor ad magnam ullam aperiam est ducimus? Magnam, voluptatum
-						tempora. Veniam!
-					</p>
-				</div>
-				<div class="col-md-4 py-2">
-					<h3>Title</h3>
-					<p class="text-secondary fw-3 fs-5">
-						Minima eius ipsam cupiditate illum excepturi. A quis, excepturi,
-						magnam minima expedita maiores et cum nisi aspernatur commodi,
-						temporibus eius.
-					</p>
-				</div>
-				<div class="col-md-4 py-2">
-					<h3>Title</h3>
-					<p class="text-secondary fw-3 fs-5">
-						Eaque tempore consequatur porro ratione id ipsum excepturi
-						quisquam dolorum quibusdam ex laborum aliquid, necessitatibus
-						autem exercitationem corrupti officia doloribus.
-					</p>
-				</div>
-			</div>
+		</div>
+		</div>
 		</div>
 		<div class="container-fluid bg-dark text-light my-5 py-5" id="#testimonial">
 			<div class="container-lg">

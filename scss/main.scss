@@ -1,25 +1,115 @@
 // Import Bootstrap functions, variables, mixins, etc.
-@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/functions"; //globals
+
+//theme colours
+
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-/// Define custom colors
 $custom-colors: (
-  "my-primary-light": rgb(255, 255, 255),
-  "secondary-light": rgb(50, 159, 9),
-  "success": #fff7e2,
-  "btn-outline-danger": #000000,
-  "bg-dark": #272728,
-);
+    "dark-footer": #272728,
+    "primary-light": #fff7e2,
+    "success": #fff7e2,
+    "item1":#fac710,
+    "item2":#8FD14F,
+    "item3": #E87B00,
+    "item4": #FF9696,
+    "item5": #DFB6FF,
+    "item6": #CDF0FF,
+    "item7": #4D8C43,
+    "item8":white,
+    "item9":#FF4040,
+    "item10":black,
+  );
 
+  $theme-colors: map-merge($theme-colors , $custom-colors );
+  //import bs
+  @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+  .catButton {
+    display: inline-block;
+    cursor: pointer;
+    h5 {
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+    i.bi-check-lg {
+      visibility: hidden;
+      transition: opacity 0.3s ease;
+      font-size: 20px;
+    }
+  
+    &:hover i.bi-check-lg {
+      -webkit-text-stroke: 1px;
+      
+      visibility: visible;
+    }
+  
+    &:active i.bi-check-lg {
+      color: black;
+    }
+    
+    &:active h5 {
+      color: rgb(0, 133, 0);
+  }
+}
+
+.flipped-image {
+  transform: scaleX(-1); //Mirrors the image horizontally 
+}
+.back1 {
+  background-image: url(../images/offer4.jpg);
+  background-size: cover;
+ background-position-y: -190px;
+ transition: background-size 1.5s ease, background-position 1.0s ease; /* Smooth transition */
+ &:hover {
+  background-size: 110%;
+  background-position-y: -188px;
+ }
+}
+.back2 {
+  background-image: url(../images/offer5.jpg);
+  background-size: cover;
+ background-position-y: -70px;
+ background-position-x: -65px;
+ 
+}.back3 {
+  background-image: url(../images/offer6.jpg);
+  background-size:cover;
+  background-position-y: -35px;
+ 
+}
 a {
   text-decoration: none;
 }
-$theme-colors:map-merge($theme-colors,$custom-colors);
-.footer-bg-dark {
-  background-color: map-get($custom-colors, "bg-dark");
+
+h2 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 500;
+  font-size: 80px;
 }
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+hr {
+  &.underline {
+    opacity: 100%;
+    width: 100px; // Set the width to 50 pixels
+    border: none; // Remove default border
+    height: 6px; // Set the height/thickness of the line
+  }
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+
 ul {
   list-style: none;
   padding-left: 0; /* Optional: Remove default padding */
@@ -124,7 +214,7 @@ ul {
   .navbar {
     background-color: white; /* Color for mobile devices */
   }
-} 
+}
 
 //background image
 .imageMain {

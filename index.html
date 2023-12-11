@@ -63,23 +63,33 @@
 		</nav>
 		<div class="container-fluid text-dark py-5 ">
 			<div class="container-lg">
-				<div class="row vh-50 d-flex align-items-center">
-					<div class="col-md-6">
-						<h1 class="fw-bold lh-2 display-1 headerText">
+				<div class="row d-flex align-items-center">
+					<div class="col-md-5">
+						<h1 class="fw-bold lh-2 display-3 py-3">
 							Order your Favorite Foods
 						</h1>
-						<p class="fw-semibold">
+						<p class="fw-semibold fs-4 py-3">
 							Savour the freshness of our breakfast offerings from the comfort of your home.
 						</p>
-						<div class="col-md-5 mb-3 locationButton">
-							<input type="search" class="form-control" id="location"
-								placeholder="Enter your location or eircode " aria-describedby="location">
+						<div class="col-md-7 mb-3 locationButton">
+							<div class="input-group">
+								<input type="search" class="form-control rounded-5 mb-3 " id="location" placeholder="Enter your location or eircode" aria-describedby="location">
+								
+							</div>
 						</div>
-
-						<button type="button" class="btn btn-danger logIn"><i
-								class="bi bi-box-arrow-in-right"></i>Login</button>
+						
+						<!-- order now button -->
+						<button type="button" class="btn btn-item1 rounded-5 orderNow mb-5">
+							<div class="d-inline-flex align-items-center">
+								<div class="arrowRounded rounded-circle bg-light text-dark d-flex justify-content-center align-items-center" style="width: 35px; height: 35px;">
+									<i class="bi bi-arrow-right fs-4"></i>
+								</div>
+								<span class="contentText ms-1 fs-5 fw-semibold">Order Now</span>
+							</div>
+						</button>
+						
 					</div>
-					<div class="col-md-6 my-5">
+					<div class="col-md-7 pt-5">
 						<img src="images/headerMain.png" class="img-fluid" alt="" />
 					</div>
 
@@ -89,7 +99,7 @@
 	</header>
 	<main id="#main">
 		<!-- categories -->
-		<div class="container-fluid bg-primary-light py-5">
+		<div class="container-fluid bg-primary-light py-5 categories">
 			<div class="row text-center col-md-12">
 				<h2>Categories</h2>
 				<div class="container-lg">
@@ -110,52 +120,52 @@
 										<div class="col-md-1"></div><!-- empty div -->
 
 										<!-- Five carousel items, each taking up two columns -->
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item1 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/chicken.png" width="160">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Chicken Subs</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item2 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/vegan.png" width="160">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Vegan Subs</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item3 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/beef.png" width="160">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Beef Subs</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item4 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/halal.png" width="160">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Halal Subs</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item5 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/pork.png" width="160">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Pork Subs</h5>
 											</div>
@@ -167,52 +177,52 @@
 										<div class="col-md-1"></div><!-- empty div -->
 
 										<!-- Five carousel items, each taking up two columns -->
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item6 rounded-5 py-3 shadow d-flex justify-content-center flipped-image">
 												<img src="./images/tuna.png" width="156">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Tuna Subs</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item7 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/salad.png" width="156">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Salads</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item8 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/sides.png" width="156">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Sides</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item9 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/drinks.png" width="156">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Drinks</h5>
 											</div>
 										</div>
-										<div class="col-md-2 item ">
+										<div class="col-md-2 item catButton">
 											<div
 												class="carousel-item-content bg-item10 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/deals.png" width="156">
 											</div>
-											<div class="py-2 catButton">
+											<div class="py-2 ">
 												<i class="bi bi-check-lg"></i>
 												<h5>Deals</h5>
 											</div>
@@ -234,217 +244,326 @@
 				<div class="col-1"></div> <!-- Skip one column -->
 			</div>
 		</div>
-		</div>
-		</div>
 		<!-- hot offers -->
-		<div class="container-md my-5 py-5" id="#hotoffers">
-			<div class="container-md">
-				<div class="row text-center col-md-12">
-					<div class="d-flex justify-content-center"><h2 class="text-item1">Hot</h2><h2>&nbsp;Offers</h2></div>
-					<div class="container-lg pb-5">
-						<div class="row">
-							<div class="col-md-12">
-								<hr class="underline bg-item1 d-block mx-auto">
+		<div class="container-lg my-5 py-5" id="#hotoffers">
+
+			<div class="row">
+				<div class="d-flex justify-content-center ">
+					<h2 class="text-item1">Hot</h2>
+					<h2>&nbsp;Offers</h2>
+				</div>
+				<div class="container-lg pb-5">
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="underline bg-item1 d-block mx-auto">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row hotOffer">
+				<!-- section 1 -->
+				<div class="col-md-4 py-2">
+					<div class="back1 rounded-5 pt-5 pb-3 px-2 position-relative">
+						<div class="text-center offerTag">
+							<div
+								class="bg-primary-color text-uppercase rounded-2 px-2 py-1 fs-6 position-absolute top-0 start-0 mt-3 ms-3">
+								<p class="m-0">Offer</p>
+							</div>
+						</div>
+						<div class="text-primary-color ms-2">
+							<div class="text-uppercase ">
+								<h4>ENJOY 50% WITH OUR ONLINE COUPON</h4>
+							</div>
+							<div class="text-primary-color mt-3 pb-1">
+								<p class="findMore m-0">Find out more<i class="bi bi-arrow-right"></i></p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-4 rounded-5 back1 ">
-						<div class="text-center">
-
-							<p class="text-md-center fs-2 fw-semibold py-5">
-								“innovative solution. Simplicity and ease of communication with
-								customers and friends. I recommend it.”
-							</p>
+				<!-- section 2 -->
+				<div class="col-md-4 py-2">
+					<div class="back2 rounded-5 pt-5 pb-3 px-2 position-relative">
+						<div class="text-center offerTag">
+							<div
+								class="bg-primary-color text-uppercase rounded-2 px-2 py-1 fs-6 position-absolute top-0 start-0 mt-3 ms-3">
+								<p class="m-0">Offer</p>
+							</div>
 						</div>
-					</div>
-					<div class="col-md-4">
-						<div class=" text-center rounded-5 back2">
-
-							<p class="text-md-center fs-2 fw-semibold py-5">
-								“innovative solution. Simplicity and ease of communication with
-								customers and friends. I recommend it.”
-							</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class=" text-center rounded-5  back3">
-
-							<p class="text-md-center fs-2 fw-semibold py-5">
-								“innovative solution. Simplicity and ease of communication with
-								customers and friends. I recommend it.”
-							</p>
+						<div class="text-primary-color ms-2">
+							<div class="text-uppercase ">
+								<h4>€80 OFF FOR LARGE GROUP ORDERS!</h4>
+							</div>
+							<div class="text-primary-color mt-3 pb-1">
+								<p class="findMore m-0">Find out more<i class="bi bi-arrow-right"></i></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="container-lg my-5 py-5">
-			<div class="row justify-content-center">
-				<div class="col-5 text-center">
-					<i class="display-1 text-success bi bi-boxes"></i>
-				</div>
-			</div>
-			<div class="row d-flex align-items-center">
-				<div class="col-md-6">
-					<p class="text-uppercase fw-bold fs-6 text-primary">
-						<small>Get Started</small>
-					</p>
-					<h1 class="fw-bold lh-1 display-5">
-						This really is a great product!
-					</h1>
-					<p class="fw-semibold text-secondary">
-						If you BUY now, I’ll be sending you another mystery bonus as a
-						token of appreciation. I’m selling this for $297 but you’re
-						getting it for FREE Today!
-					</p>
-				</div>
-				<div class="col">
-					<img src="images/2.png" class="img-fluid" lt="" />
-				</div>
-			</div>
-			<hr class="border border-1 opacity-10" />
-			<div class="row d-flex align-items-center">
-				<div class="col">
-					<img src="images/3.png" class="img-fluid" lt="" />
-				</div>
-				<div class="col-md-6">
-					<p class="text-uppercase fw-bold fs-6 text-primary">
-						<small>Get Started</small>
-					</p>
-					<h1 class="fw-bold lh-1 display-5">
-						This really is a great product!
-					</h1>
-					<p class="fw-semibold text-secondary">
-						If you BUY now, I’ll be sending you another mystery bonus as a
-						token of appreciation. I’m selling this for $297 but you’re
-						getting it for FREE Today!
-					</p>
-					<div class="row py-5">
-						<div class="col-6">
-							<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-							<h4>Title</h4>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Magnam odio assumenda minus illum eligendi eius.
-							</p>
+				<!-- section 3 -->
+				<div class="col-md-4 py-2">
+					<div class="back3 rounded-5 pt-5 pb-3 px-2 position-relative">
+						<div class="text-center offerTag">
+							<div
+								class="bg-primary-color text-uppercase rounded-2 px-2 py-1 fs-6 position-absolute top-0 start-0 mt-3 ms-3">
+								<p class="m-0">Offer</p>
+							</div>
 						</div>
-						<div class="col-6">
-							<i class="bi bi-check2-circle text-primary fs-5 fw-bold"></i>
-							<h4>Title</h4>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Magnam odio assumenda minus illum eligendi eius.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr class="border border-1 opacity-10" />
-			<div class="row justify-content-md-center justify-content-sm-start pt-3">
-				<div class="col-8">
-					<p class="text-md-center text-primary text-uppercase fw-bold fs-6">
-						<small>FAQ</small>
-					</p>
-					<p class="text-md-center fs-2 fw-semibold py-3">
-						List of questions and answers about our community
-					</p>
-				</div>
-				<div class="row">
-					<div class="col-md-6 d-flex">
-						<div class="px-5">
-							<i class="bi bi-1-circle text-primary fs-3 align-self-start"></i>
-						</div>
-						<div>
-							<h3>Get Started</h3>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Ipsa, incidunt maiores! Unde error sint suscipit.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 d-flex">
-						<div class="px-5">
-							<i class="bi bi-2-circle text-primary fs-3 align-self-start"></i>
-						</div>
-						<div>
-							<h3>Get Started</h3>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Ipsa, incidunt maiores! Unde error sint suscipit.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 d-flex">
-						<div class="px-5">
-							<i class="bi bi-3-circle text-primary fs-3 align-self-start"></i>
-						</div>
-						<div>
-							<h3>Get Started</h3>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Ipsa, incidunt maiores! Unde error sint suscipit.
-							</p>
-						</div>
-					</div>
-					<div class="col-md-6 d-flex">
-						<div class="px-5">
-							<i class="bi bi-4-circle text-primary fs-3 align-self-start"></i>
-						</div>
-						<div>
-							<h3>Get Started</h3>
-							<p>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Ipsa, incidunt maiores! Unde error sint suscipit.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container-fluid bg-light">
-			<div class="container-lg">
-				<div class="row justify-content-center mt-5 py-5">
-					<div class="col-5 text-center py-5">
-						<i class="display-1 text-success bi bi-envelope-fill"></i>
-					</div>
-					<div class="row justify-content-md-center justify-content-sm-start">
-						<div class="col-md-8">
-							<p class="text-md-center text-success text-uppercase fw-bold fs-6">
-								<small>Get Started</small>
-							</p>
-							<p class="text-md-center fs-2 fw-semibold">
-								It really is such a great product - Elon would be so proud of
-								us.
-								<span class="text-muted">We're a great bunch of people.</span>
-							</p>
-							<p class="text-md-center py-2">
-								Leave us your e-mail and we will get back to you. This is the
-								first step to becoming a tester.
-							</p>
-							<div class="input-group pt-2 pb-5">
-								<input type="text" class="form-control py-3" placeholder="Recipient's username"
-									aria-label="Recipient's username" aria-describedby="button-addon2" />
-								<button class="btn btn-outline-secondary" type="button" id="button-addon2">
-									Button
-								</button>
+						<div class="text-primary-color ms-2">
+							<div class="text-uppercase ">
+								<h4>FREE SOUP WITH EVERY SUB ORDER!</h4>
+							</div>
+							<div class="text-primary-color mt-3 pb-1">
+								<p class="findMore m-0">Find out more<i class="bi bi-arrow-right"></i></p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer class="container-fluid">
+		<!-- mobile -->
+		<div class="container-fluid bg-success">
+			<div class="row">
+				<div class="container-fluid text-dark">
+					<div class="container-lg">
+						<div class="row vh-50 d-flex align-items-center">
+							<div class="col-md-5">
+								<h2 class="fw-semibold lh-2 headerText">
+									Honey, we’re not cooking today!
+								</h2>
+								<p class="fw-medium fs-5 py-4">
+									Download the Apple Award-winning Greenville Deli app and choose from multiple restaurants across Ireland and thousands of satisfied customers! Discover great food with delivery to your door!
+								</p>
+								<div class="col-md-6 pb-3">
+									<img src="images/badges.png " width="180px">
+								</div>
+							</div>
+							<div class="col-md-7">
+								<img src="images/appmobile.png" class="img-fluid" alt="" />
+							</div>
+		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Catering -->
+		<div class="container-lg py-5">
+			<!-- header -->
+			<div class="row text-center col-md-12 pb-5">
+				<div class="d-flex justify-content-center ">
+					<h2 class="text-item1">Event</h2>
+					<h2>&nbsp;Catering</h2>
+				</div>
+				<div class="container-lg">
+					<div class="row">
+						<div class="col-md-12">
+							<hr class="underline bg-item1 d-block mx-auto">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Content -->
+			<div class="col-md-12 caterBack rounded-5 border border-3 border-item1 ">
+				<div class="col-md-5 p-4">
+					<div class=" px-4 bg-primary-color rounded-5 ">
+						<!-- title -->
+						<div class="row text-center col-md-12 pt-5">
+							<h3 class="display-5 fw-medium">Looking to order for a large group?</h3>
+						</div>
+						<!-- text -->
+						<div class="container-lg">
+							<p class="py-3 fs-5 lh-2">
+								Look no further, Greenville Deli offers a diverse and delectable menu, this deli
+								guarantees an unforgettable
+								catering experience with exceptional taste and personalized service.</p>
+							<p class="py-3 fs-5 lh-2">
+								Contact your local Greenville Deli for comprehensive catering details and personalized
+								event assistance. Or click the link below!</p>
+							<div class="mt-3 pb-5">
+								<p class="findMore fs-4 m-0">Find out more<i class="bi bi-arrow-right"></i></p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- Reviews -->
+		<div class="container-fluid bg-primary-light testimonials py-5 mt-5 ">
+
+			<!-- header -->
+			<div class="row text-center col-md-12 py-2 ">
+				<div class="d-flex justify-content-center"> <!-- fix this later -->
+					<h2>Testimonials</h2>
+				</div>
+				<div class="container-lg ">
+					<div class="row">
+						<div class="col-md-12 my-4">
+							<hr class="underline bg-item1 d-block mx-auto ">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- carousel -->
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<!-- content 1 -->
+					<div class="carousel-item active pt-5">
+						<div class="container-lg d-flex justify-content-center pt-4 ">
+							<div class="backgroundColor bg-borderReview col-md-8 ">
+								<div class="row bgcContent d-flex justify-content-center">
+									<div class="col-2">
+										<div class="mark1">
+											<img src="/images/leftMark.png" class="img-fluid"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="review rounded-circle ">
+											<img src="/images/review3.jpg" class="img-fluid rounded-circle"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="mark2">
+											<img src="/images/rightMark.png" class="img-fluid"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-md-8 text-center text">
+										<p class="fs-3 py-3">Absolutely love my sub! Fresh ingredients packed
+											between
+											perfectly baked bread. The flavours are exceptional, and the portion
+											size is
+											just right.
+											Definitely my go-to for a satisfying meal!
+										</p>
+										<figcaption class="blockquote-footer">
+											<cite class="fs-5 py-1 text-dark" title="Source Title">Elena Cruz</cite>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- content 2 -->
+					<div class="carousel-item pt-5">
+						<div class="container-lg d-flex justify-content-center pt-4 ">
+							<div class="backgroundColor bg-borderReview col-md-8 ">
+								<div class="row bgcContent d-flex justify-content-center">
+									<div class="col-2">
+										<div class="mark1">
+											<img src="/images/leftMark.png" class="img-fluid"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="review rounded-circle ">
+											<img src="/images/review2.jpg" class="img-fluid rounded-circle"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="mark2">
+											<img src="/images/rightMark.png" class="img-fluid"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-md-8 text-center text">
+										<p class="fs-3 py-3">Greenville Deli's sandwiches are a tasty delight!
+											Despite a
+											slight delay in service, the flavorful options and friendly staff create
+											an
+											enjoyable dining experience. Best food I ever had!
+										</p>
+										<figcaption class="blockquote-footer">
+											<cite class="fs-5 py-1 text-dark" title="Source Title">Sebastian
+												Parker</cite>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- content 3 -->
+					<div class="carousel-item pt-5">
+						<div class="container-lg d-flex justify-content-center pt-4 ">
+							<div class="backgroundColor bg-borderReview col-md-8 ">
+								<div class="row bgcContent d-flex justify-content-center">
+									<div class="col-2">
+										<div class="mark1">
+											<img src="/images/leftMark.png" class="img-fluid"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="review rounded-circle ">
+											<img src="/images/review1.jpg" class="img-fluid rounded-circle"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-2">
+										<div class="mark2">
+											<img src="/images/rightMark.png" class="img-fluid"
+												style="max-width: 100%; height: auto;">
+										</div>
+									</div>
+									<div class="col-md-8 text-center text">
+										<p class="fs-3 py-3">Greenville Deli serves up delightful sandwiches!
+											Despite
+											occasional delays, the tasty offerings (with the delicious ingredients)
+											and
+											friendly atmosphere always make for a satisfying meal.
+										</p>
+										<figcaption class="blockquote-footer">
+											<cite class="fs-5 py-1 text-dark" title="Source Title">Ethan
+												Miller</cite>
+										</figcaption>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- stars -->
+				<div class="row py-4">
+					<div class="d-flex btn-group-star justify-content-center" role="group"
+						aria-label="Basic mixed styles example">
+						<button type="button" class="btn border-0">
+							<i class="bi bi-star-fill fs-2 text-item1 px-2"></i>
+						</button>
+						<button type="button" class="btn border-0">
+							<i class="bi bi-star-fill fs-2 text-item1 px-2"></i>
+						</button>
+						<button type="button" class="btn border-0">
+							<i class="bi bi-star-fill fs-2 text-item1 px-2"></i>
+						</button>
+						<button type="button" class="btn border-0">
+							<i class="bi bi-star-fill fs-2 text-item1 px-2"></i>
+						</button>
+						<button type="button" class="btn border-0">
+							<i class="bi bi-star-fill fs-2 text-item1 px-2"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- footer -->
+		<footer class="container-fluid mt-5">
 			<div class="container-lg">
-				<div class="topSection col-md-12">
-					<h5 class="socialTitle">Social Media</h5>
-					<a href="#"><i class="bi bi-facebook"></i></a>
-					<a href="#"><i class="bi bi-instagram"></i></a>
-					<a href="#"><i class="bi bi-twitter"></i></a>
-					<a href="#"><i class="bi bi-youtube"></i></a>
-					<a href="#"><i class="bi bi-linkedin"></i></a>
+				<div class="row py-5">
+					<div class="d-flex justify-content-end">
+						<h4 class="text-dark">Social Media</h4>
+					</div>
+					<div class="topSection col-md-12 fs-2 d-flex justify-content-end  ">
+						<a href="#"><i class="bi bi-facebook px-3"></i></a>
+						<a href="#"><i class="bi bi-instagram px-3"></i></a>
+						<a href="#"><i class="bi bi-twitter px-3"></i></a>
+						<a href="#"><i class="bi bi-youtube px-3"></i></a>
+						<a href="#"><i class="bi bi-linkedin px-3"></i></a>
+					</div>
 				</div>
 			</div>
 			<hr class=" container-lg">
@@ -453,42 +572,42 @@
 				<div class="container-lg">
 					<div class="row py-5">
 						<div class="panel col-lg-3">
-							<h5>Contact</h5>
-							<ul>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Contact Greenville Deli Services</a></li>
-								<li><a href="#">Find a Greenville Deli</a></li>
+							<h5 class="pb-2">Contact</h5>
+							<ul class="list-unstyled text-secondary">
+								<li>Contact Us</li>
+								<li>Contact Greenville Deli Services</li>
+								<li>Find a Greenville Deli</li>
 							</ul>
 						</div>
 						<!-- panel 2 -->
 						<div class="panel col-md-3">
-							<h5>Quick Links</h5>
-							<ul>
-								<li><a href="#">Order Food</a></li>
-								<li><a href="#">View Menu</a></li>
-								<li><a href="#">Subscribe to get promotions</a></li>
-								<li><a href="#">Order Catering</a></li>
-								<li><a href="#">Greenville Deli History</a></li>
+							<h5 class="pb-2">Quick Links</h5>
+							<ul class="list-unstyled text-secondary">
+								<li>Order Food</li>
+								<li>View Menu</li>
+								<li>Subscribeget promotions</li>
+								<li>Order Catering</li>
+								<li>Greenville Deli History</li>
 							</ul>
 						</div>
 						<!-- panel 3 -->
 						<div class="panel col-md-3">
-							<h5>Our Team</h5>
-							<ul>
-								<li><a href="#">Greenville Deli Group</a></li>
-								<li><a href="#">Catering Offers</a></li>
-								<li><a href="#">Current Staff</a></li>
-								<li><a href="#">Buy Greenville Deli Stocks</a></li>
-								<li><a href="#">Careers</a></li>
-								<li><a href="#">GreenvilleDeli.com</a></li>
+							<h5 class="pb-2">Our Team</h5>
+							<ul class="list-unstyled text-secondary">
+								<li>Greenville Deli Group</li>
+								<li>Catering Offers</li>
+								<li>Current Staff</li>
+								<li>Buy Greenville Deli Stocks</li>
+								<li>Careers</li>
+								<li>GreenvilleDeli.com</li>
 							</ul>
 						</div>
 						<!-- panel 4 -->
 						<div class="panel col-md-3">
-							<h5>Legal</h5>
-							<ul>
-								<li><a href="#">Allergen List</a></li>
-								<li><a href="#">Additional Legal Information</a></li>
+							<h5 class="pb-2">Legal</h5>
+							<ul class="list-unstyled text-secondary">
+								<li>Allergen List</li>
+								<li>Additional Legal Information</li>
 							</ul>
 						</div>
 					</div>

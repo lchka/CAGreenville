@@ -3,118 +3,43 @@
 
 //theme colours
 
-
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 $custom-colors: (
-    "dark-footer": #272728,
-    "primary-light": #fff7e2,
-    "success": #fff7e2,
-    "item1":#fac710,
-    "item2":#8FD14F,
-    "item3": #E87B00,
-    "item4": #FF9696,
-    "item5": #DFB6FF,
-    "item6": #CDF0FF,
-    "item7": #4D8C43,
-    "item8":white,
-    "item9":#FF4040,
-    "item10":black,
-  );
+  "dark-footer": #272728,
+  "light-footer":#e6e6e6,
+  "primary-light": #fff7e2,
+  "primary-color": white,
+  "success": #fff7e2,
+  "item1": #fac710,
+  "item2": #8fd14f,
+  "item3": #e87b00,
+  "item4": #ff9696,
+  "item5": #dfb6ff,
+  "item6": #cdf0ff,
+  "item7": #4d8c43,
+  "item8": white,
+  "item9": #ff4040,
+  "item10": black,
+  "borderReview": #ffe399,
+);
 
-  $theme-colors: map-merge($theme-colors , $custom-colors );
-  //import bs
-  @import "../node_modules/bootstrap/scss/bootstrap.scss";
+$theme-colors: map-merge($theme-colors, $custom-colors);
+//import bs
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-  .catButton {
-    display: inline-block;
-    cursor: pointer;
-    h5 {
-      display: inline-block;
-      transition: color 0.3s ease;
-    }
-    i.bi-check-lg {
-      visibility: hidden;
-      transition: opacity 0.3s ease;
-      font-size: 20px;
-    }
-  
-    &:hover i.bi-check-lg {
-      -webkit-text-stroke: 1px;
-      
-      visibility: visible;
-    }
-  
-    &:active i.bi-check-lg {
-      color: black;
-    }
+@mixin arrowTextHover {
+  position: relative;
+  overflow: hidden;
+  .arrowRounded {
+    transition: transform 0.3s ease;
     
-    &:active h5 {
-      color: rgb(0, 133, 0);
+  }
+  .contentText {
+    transition: transform 0.3s ease;
   }
 }
-
-.flipped-image {
-  transform: scaleX(-1); //Mirrors the image horizontally 
-}
-.back1 {
-  background-image: url(../images/offer4.jpg);
-  background-size: cover;
- background-position-y: -190px;
- transition: background-size 1.5s ease, background-position 1.0s ease; /* Smooth transition */
- &:hover {
-  background-size: 110%;
-  background-position-y: -188px;
- }
-}
-.back2 {
-  background-image: url(../images/offer5.jpg);
-  background-size: cover;
- background-position-y: -70px;
- background-position-x: -65px;
- 
-}.back3 {
-  background-image: url(../images/offer6.jpg);
-  background-size:cover;
-  background-position-y: -35px;
- 
-}
-a {
-  text-decoration: none;
-}
-
-h2 {
-  font-family: "Fredoka", sans-serif;
-  font-weight: 500;
-  font-size: 80px;
-}
-
-h5 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-hr {
-  &.underline {
-    opacity: 100%;
-    width: 100px; // Set the width to 50 pixels
-    border: none; // Remove default border
-    height: 6px; // Set the height/thickness of the line
-  }
-}
-
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(100%);
-}
-
-ul {
-  list-style: none;
-  padding-left: 0; /* Optional: Remove default padding */
-}
-// Button mixin for common button styles
 @mixin commonButtonStyles {
   $radius: 30px;
   $padding: 2px 20px;
@@ -152,6 +77,132 @@ ul {
     }
   }
 }
+.orderNow {
+  @include arrowTextHover;
+  
+  &:hover {
+    .arrowRounded {
+      transform: translateX(305%);
+    }
+
+    .contentText {
+      transform: translateX(-35%);
+    }
+  }
+}
+
+
+
+
+.categories {
+  .catButton {
+    display: inline-block;
+    cursor: pointer;
+    h5 {
+      display: inline-block;
+      transition: color 0.3s ease;
+    }
+    i.bi-check-lg {
+      visibility: hidden;
+      transition: opacity 0.3s ease;
+      font-size: 20px;
+    }
+
+    &:hover i.bi-check-lg {
+      -webkit-text-stroke: 1px;
+
+      visibility: visible;
+    }
+
+    &:active i.bi-check-lg {
+      color: black;
+    }
+
+    &:active h5 {
+      color: rgb(0, 133, 0);
+    }
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
+}
+
+.backgroundColor {
+  border-radius: 30px;
+  height: 500px;
+  transform: rotate(180deg);
+  .bgcContent {
+    transform: rotate(180deg);
+  }
+}
+@media (max-width: 767.98px) {
+  .backgroundColor {
+    height: 345px;
+  }
+}
+
+.testimonials {
+.review {
+  border: 6px solid #ffe399;
+}
+}
+
+.flipped-image {
+  transform: scaleX(-1); //Mirrors the image horizontally
+}
+.hotOffer {
+  .back1 {
+    background-image: url(../images/offer4.jpg);
+    background-size: cover;
+    background-position-y: -190px;
+  }
+  .back2 {
+    background-image: url(../images/offer5.jpg);
+    background-size: cover;
+    background-position-y: -70px;
+    background-position-x: -65px;
+  }
+  .back3 {
+    background-image: url(../images/offer6.jpg);
+    background-size: cover;
+    background-position-y: -35px;
+  }
+  .offerTag {
+    font-weight: 700;
+    padding-bottom: 140px;
+  }
+}
+
+.caterBack {
+  background-image: url("/images/cater2.jpg");
+  background-size: cover;
+  h4 {
+    font-family: "Fredoka", sans-serif;
+  }
+}
+hr.underline  {
+    opacity: 100%;
+    width: 100px; // Set the width to 50 pixels
+    border: none; // Remove default border
+    height: 6px; // Set the height/thickness of the line
+}
+.p,
+.li,
+h4,
+h5 {
+  font: {
+    family: "Open Sans", sans-serif;
+  }
+}
+h2,h3 {
+  font-family: "Fredoka", sans-serif;
+  font-size: 68px;
+}
+
+
+// Button mixin for common button styles
+
 
 .navbar-brand img {
   width: 105px; /* Set the width to 45 pixels */
@@ -209,13 +260,12 @@ ul {
     }
   }
 }
-//changes navbar colour in phone mode so that the navabr is able to be seen
+//changes navbar colour in phone mode so that the navbar dropdown isnt overlaying the content is able to be seen
 @media (max-width: 767.98px) {
   .navbar {
     background-color: white; /* Color for mobile devices */
   }
 }
-
 //background image
 .imageMain {
   background-image: url(../images/headerCropped.jpg);
@@ -226,69 +276,17 @@ ul {
     background-image: url(../images/header.jpg);
   }
 }
-//search button
-.col-md-5 {
-  .input-group {
-    width: 100%; // Ensure it fills col-md-5 space
 
-    .form-control.rounded-start {
-      border-radius: 30px; // Rounded border
-    }
 
-    .input-group-append {
-      pointer-events: none; // Prevent the appended icon from being clickable
-    }
-
-    .input-group-text {
-      border: none; // Remove border
-      background-color: transparent; // Transparent background
-    }
-  }
-}
-.headerText {
-  padding-top: 50px;
-}
 //footer
 footer {
-  background-color: #e6e6e6;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-
-  .topSection {
-    padding: 40px 10px 40px 10px;
-    text-align: right;
-  }
-  .socialTitle {
-    padding-right: 200px;
-  }
-
-  i {
-    font-size: 30px;
-    margin-right: 30px;
-  }
-
-  a {
+  .topSection a {
     color: #676767;
-
     &:hover {
       color: #373737;
     }
   }
-  .bottomSection {
-    .panel {
-      .panel01 {
-        a {
-          color: #7e7e7e;
 
-          &:hover {
-            color: #000000;
-            font-weight: 600;
-          }
-        }
-        padding-bottom: 50px;
-      }
-    }
-  }
 }
 
 .bottomFooter {

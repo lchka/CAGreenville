@@ -91,9 +91,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
-
-
-
 .categories {
   .catButton {
     display: inline-block;
@@ -179,6 +176,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   background-size: cover;
   h4 {
     font-family: "Fredoka", sans-serif;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .cateringOverflow {
+    align-items: center;
   }
 }
 hr.underline  {

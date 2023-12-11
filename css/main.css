@@ -13361,6 +13361,11 @@ textarea.form-control-lg {
   font-family: "Fredoka", sans-serif;
 }
 
+@media (max-width: 767.98px) {
+  .cateringOverflow {
+    align-items: center;
+  }
+}
 hr.underline {
   opacity: 100%;
   width: 100px;

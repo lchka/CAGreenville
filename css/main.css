@@ -13364,6 +13364,11 @@ textarea.form-control-lg {
 @media (max-width: 767.98px) {
   .cateringOverflow {
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .cateringOverflow h2, .cateringOverflow .h2 {
+    margin: 5px 0;
   }
 }
 hr.underline {

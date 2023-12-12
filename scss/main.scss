@@ -1,13 +1,14 @@
 // Import Bootstrap functions, variables, mixins, etc.
 @import "../node_modules/bootstrap/scss/functions"; //globals
 
-//theme colours
+$items-per-row-md: 5; // For medium devices and up
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 $custom-colors: (
   "dark-footer": #272728,
+  "light-grey":#4d4d4d,
   "light-footer":#e6e6e6,
   "primary-light": #fff7e2,
   "primary-color": white,
@@ -29,53 +30,33 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 //import bs
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-@mixin arrowTextHover {
-  position: relative;
-  overflow: hidden;
-  .arrowRounded {
-    transition: transform 0.3s ease;
-    
-  }
-  .contentText {
-    transition: transform 0.3s ease;
-  }
-}
-@mixin commonButtonStyles {
-  $radius: 30px;
-  $padding: 2px 20px;
-  $font-size: 20px;
-  $icon-size: 24px;
-  $font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  $font-button-bold: 700;
-  font-weight: $font-button-bold;
-  border-radius: $radius;
-  padding: $padding;
-  font-size: $font-size;
-  font-family: $font-family;
 
-  i {
-    font-size: 28px;
-    vertical-align: middle;
-  }
-}
-@mixin commonNavbarOptionStyles {
-  ul.navbar-nav.options {
-    li.nav-item {
-      padding-right: 15px;
-      padding-left: 15px;
-      a.nav-link {
-        font-size: 20px; /* Setting font size to 20px */
-        line-height: 30px; /* Maintain a consistent line height */
 
-        font-weight: 500;
-
-        &:hover {
-          color: #ffe399;
+// Mixin for generating carousel items per row
+@mixin carouselItems($items-per-row) {
+  .carousel-inner {
+    .carousel-item {
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        .col-md {
+          flex: 0 0 calc(100% / #{$items-per-row});
+          max-width: calc(100% / #{$items-per-row});
+          margin-bottom: 15px; // Adjust margin as needed
         }
       }
     }
   }
+}
+
+// Usage of the mixin for different screen sizes
+@media (min-width: 768px) {
+  @include carouselItems($items-per-row-md);
+}
+
+// Usage of the mixin for different screen sizes
+@media (min-width: 768px) {
+  @include carouselItems($items-per-row-md);
 }
 .orderNow {
   @include arrowTextHover;
@@ -90,7 +71,33 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     }
   }
 }
+.orderNow2 {
+  @include arrowTextHover;
+  
+  &:hover {
+    .arrowRounded {
+      transform: translateX(205%);
+    }
 
+    .contentText {
+      transform: translateX(-75%);
+    }
+  }
+}
+.orderNow3 {
+  @include arrowTextHover;
+  
+  &:hover {
+    .arrowRounded {
+      transform: translateX(185%);
+    }
+
+    .contentText {
+      transform: translateX(-105%);
+    }
+  }
+}
+//categories section
 .categories {
   .catButton {
     display: inline-block;
@@ -125,7 +132,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 }
 
-.backgroundColor {
+//testimonial section
+.testimonials {
+  .backgroundColor {
   border-radius: 30px;
   height: 500px;
   transform: rotate(180deg);
@@ -133,16 +142,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     transform: rotate(180deg);
   }
 }
+.review {
+  border: 6px solid #ffe399;
+}
+}
 @media (max-width: 767.98px) {
   .backgroundColor {
     height: 345px;
   }
-}
-
-.testimonials {
-.review {
-  border: 6px solid #ffe399;
-}
 }
 
 .flipped-image {
@@ -197,94 +204,34 @@ hr.underline  {
     height: 6px; // Set the height/thickness of the line
 }
 .p,
-.li,
+.li
 h4,
 h5 {
   font: {
     family: "Open Sans", sans-serif;
   }
 }
-h2,h3 {
+h2,h3,h1 {
   font-family: "Fredoka", sans-serif;
   font-size: 68px;
 }
 
-
-// Button mixin for common button styles
-
-
-.navbar-brand img {
-  width: 105px; /* Set the width to 45 pixels */
-  /* Additional styles if needed */
-}
-
-// Custom navbar styles
-.navbar {
-  @include commonNavbarOptionStyles;
-  backdrop-filter: blur(1px); /* Initial blur value for the navbar */
-
-  // background-color: rgb(255, 255, 255,0.1);
-  .icons {
-    font-size: 24px;
-    -webkit-text-stroke: 0.4px;
-
-    i {
-      &:hover {
-        color: #000;
-      }
-    }
-  }
-  .navbar-text {
-    font-size: 20px; // Applying the font size variable to navbar text
-
-    .signUp.btn {
-      @include commonButtonStyles; // Use mixin for common button styles
-      color: black;
-      background-color: transparent;
-      border: 1px solid #505050;
-      transition: all 0.3s ease;
-      i {
-        padding-right: 13px;
-      }
-      &:hover {
-        background-color: rgb(255, 255, 255, 0.5);
-        border: 1px solid #000000;
-      }
-    }
-  }
-  .logIn.btn {
-    @include commonButtonStyles; // Use mixin for common button styles
-    color: black;
-    background-color: #ffe399;
-    border: 1px solid #f1f1f1;
-    padding: 2px 26px;
-
-    i {
-      padding-right: 20px;
-      -webkit-text-stroke: 1px;
-    }
-    &:hover {
-      // Change login background color to yellow on hover
-      border-color: #4e4e4e; // Ensure a border color for consistency
-    }
-  }
-}
-//changes navbar colour in phone mode so that the navbar dropdown isnt overlaying the content is able to be seen
-@media (max-width: 767.98px) {
-  .navbar {
-    background-color: white; /* Color for mobile devices */
-  }
-}
-//background image
 .imageMain {
   background-image: url(../images/headerCropped.jpg);
   background-size: cover;
 }
-@media (max-width: 767.98px) {
-  .imageMain {
-    background-image: url(../images/header.jpg);
-  }
+// Custom navbar styles
+.navbar {
+  backdrop-filter: blur(2px); 
 }
+
+
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: white; /* Color for mobile devices */
+  }
+}//change colour of nav
+
 
 
 //footer
@@ -298,23 +245,4 @@ footer {
 
 }
 
-.bottomFooter {
-  padding-top: 25px;
-  padding-bottom: 15px;
-  .left {
-    color: rgb(202, 202, 202);
-    i {
-      padding-right: 5px;
-    }
-  }
-  .right {
-    text-align: right;
-    font-weight: 500;
-    a {
-      padding-right: 5px;
-      &:hover {
-        color: rgb(90, 90, 90);
-      }
-    }
-  }
-}
+

@@ -183,6 +183,17 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
+@media (max-width: 767.98px) {
+  .cateringOverflow {
+    align-items: center;
+    flex-direction: column; // Stacking the text vertically
+    text-align: center; // Center-aligning the text
+
+    h2 {
+      margin: 5px 0; // Adding some margin between stacked texts
+    }
+  }
+}
 hr.underline  {
     opacity: 100%;
     width: 100px; // Set the width to 50 pixels

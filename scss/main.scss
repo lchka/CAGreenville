@@ -1,8 +1,7 @@
 // Import Bootstrap functions, variables, mixins, etc.
 @import "../node_modules/bootstrap/scss/functions"; //globals
 
-$items-per-row-md: 5; // For medium devices and up
-$items-per-row-sm:2;
+//theme colours
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -31,29 +30,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 //import bs
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
-
-// Mixin for generating carousel items per row
-@mixin carouselItems($items-per-row) {
-  .carousel-inner {
-    .carousel-item {
-      .row {
-        display: flex;
-        flex-wrap: wrap;
-        .col-md {
-          flex: 0 0 calc(100% / #{$items-per-row});
-          max-width: calc(100% / #{$items-per-row});
-          margin-bottom: 15px; // Adjust margin as needed
-        }
-      }
-    }
+@mixin arrowTextHover {
+  position: relative;
+  overflow: hidden;
+  .arrowRounded {
+    transition: transform 0.3s ease;
+    
+  }
+  .contentText {
+    transition: transform 0.3s ease;
   }
 }
 
-// Usage of the mixin for different screen sizes
-@media (min-width: 768px) {
-  @include carouselItems($items-per-row-sm);
-}
 .orderNow {
   @include arrowTextHover;
   
@@ -127,7 +115,19 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   filter: invert(100%);
 }
 }
+@media (max-width: 767.98px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    opacity: 0.1;
+}
+}//changes carousel svg opacity on mobile responsive
+@media (max-width: 767.98px) {
+  .carousel-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
+}//changes carousel padding on mobile responsive
 //testimonial section
 .testimonials {
   .backgroundColor {

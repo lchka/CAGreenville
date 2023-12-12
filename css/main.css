@@ -13359,16 +13359,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media (min-width: 768px) {
-  .carousel-item .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .carousel-item .row .col-md {
-    flex: 0 0 calc(100% / 4);
-    max-width: calc(100% / 4);
-  }
-}
 .orderNow {
   position: relative;
   overflow: hidden;
@@ -13448,6 +13438,18 @@ textarea.form-control-lg {
   filter: invert(100%);
 }
 
+@media (max-width: 767.98px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    opacity: 0.1;
+  }
+}
+@media (max-width: 767.98px) {
+  .carousel-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 .testimonials .backgroundColor {
   border-radius: 30px;
   height: 500px;

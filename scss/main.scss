@@ -144,7 +144,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 @media (max-width: 767.98px) {
   .testimonials .backgroundColor {
-    height: 345px;
+    height: 365px;
+    .mark1 {
+      width: 120px;
+    }
+    .mark2 {
+      width: 120px;
+    }
   }
   
 }

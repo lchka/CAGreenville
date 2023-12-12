@@ -13464,7 +13464,13 @@ textarea.form-control-lg {
 
 @media (max-width: 767.98px) {
   .testimonials .backgroundColor {
-    height: 345px;
+    height: 365px;
+  }
+  .testimonials .backgroundColor .mark1 {
+    width: 120px;
+  }
+  .testimonials .backgroundColor .mark2 {
+    width: 120px;
   }
 }
 .flipped-image {

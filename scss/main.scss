@@ -183,6 +183,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 
+
 @media (max-width: 767.98px) {
   .cateringOverflow {
     align-items: center;
@@ -193,13 +194,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
       margin: 5px 0; // Adding some margin between stacked texts
     }
   }
-}
+}//handles header overflow mobile
 hr.underline  {
     opacity: 100%;
     width: 100px; // Set the width to 50 pixels
     border: none; // Remove default border
     height: 6px; // Set the height/thickness of the line
-}
+}//header underline
+
 .p,
 .li
 h4,
@@ -207,43 +209,40 @@ h5 {
   font: {
     family: "Open Sans", sans-serif;
   }
-}
+}//sets font family
 h2,h3,h1 {
   font-family: "Fredoka", sans-serif;
   font-size: 68px;
-}
+}//sets font family and defaults to 64px get overwritten in bs
 @media (max-width: 767.98px) {
   h2 {
     font-size: 44px;
   }
-}
+}//alters fs for mobile
+
 .imageMain {
   background-image: url(../images/headerCropped.jpg);
   background-size: cover;
-}
-// Custom navbar styles
+}//image for header
+
 .navbar {
   backdrop-filter: blur(2px); 
-}
-
-
+}//adds blur to nav
 @media (max-width: 767.98px) {
   .navbar {
     background-color: white; /* Color for mobile devices */
   }
-}//change colour of nav
-
-
+}//change colour of nav for mobile
 
 //footer
 footer {
   .topSection a {
-    color: #676767;
+    color: #4d4d4d;
     &:hover {
-      color: #373737;
+      color:#272728;
     }
   }
 
-}
+}//alters the icon hover
 
 

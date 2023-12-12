@@ -143,8 +143,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 }
 @media (max-width: 767.98px) {
-  .backgroundColor {
-    height: 345px;
+  .testimonials .backgroundColor {
+    height: 385px;
   }
 }
 

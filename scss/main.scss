@@ -122,7 +122,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 }//changes carousel svg opacity on mobile responsive
 @media (max-width: 767.98px) {
-  .carousel-item {
+  .categories .carousel-item {
     padding-left: 50px;
     padding-right: 50px;
   }

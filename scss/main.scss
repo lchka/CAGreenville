@@ -110,6 +110,22 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
       color: rgb(0, 133, 0);
     }
   }
+.catButton2 {
+      display: inline-block;
+    cursor: pointer;
+    h5 {
+      display: inline-block;
+      color: rgb(0, 133, 0);
+    }
+    i.bi-check-lg {
+      
+      
+      font-size: 20px;
+    }
+
+   
+
+  }
   .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(100%);

@@ -13433,6 +13433,17 @@ textarea.form-control-lg {
 .categories .catButton:active h5, .categories .catButton:active .h5 {
   color: rgb(0, 133, 0);
 }
+.categories .catButton2 {
+  display: inline-block;
+  cursor: pointer;
+}
+.categories .catButton2 h5, .categories .catButton2 .h5 {
+  display: inline-block;
+  color: rgb(0, 133, 0);
+}
+.categories .catButton2 i.bi-check-lg {
+  font-size: 20px;
+}
 .categories .carousel-control-prev-icon,
 .categories .carousel-control-next-icon {
   filter: invert(100%);

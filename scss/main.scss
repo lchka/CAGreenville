@@ -2,6 +2,7 @@
 @import "../node_modules/bootstrap/scss/functions"; //globals
 
 $items-per-row-md: 5; // For medium devices and up
+$items-per-row-sm:2;
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -51,12 +52,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Usage of the mixin for different screen sizes
 @media (min-width: 768px) {
-  @include carouselItems($items-per-row-md);
-}
-
-// Usage of the mixin for different screen sizes
-@media (min-width: 768px) {
-  @include carouselItems($items-per-row-md);
+  @include carouselItems($items-per-row-sm);
 }
 .orderNow {
   @include arrowTextHover;

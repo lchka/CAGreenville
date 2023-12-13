@@ -259,9 +259,9 @@
 			<div class="col-1"></div> <!-- Skip one column -->
 		</div>
 	</div>
-	<!-- chk products -->
-	<div class="container-fluid py-5 carousels chkProd">
-		<!-- header and menu -->
+
+	<!-- chkCategoryViewHidden -->
+	<div id="chickenProd" class=" chicken-prod container-fluid bg-prod-bg py-5 carousels ">
 		<div class="container-lg">
 			<div class="row">
 				<div class="d-flex justify-content-start ">
@@ -278,110 +278,466 @@
 			</div>
 		</div>
 
-
 		<div class="row">
-			<div id="subChk" class="carousel slide">
+			<div id="chkProd" class="carousel slide">
 				<div class="container-lg">
 					<div class="carousel-inner">
 						<div class="col-md-12">
 							<div class="carousel-item py-5 active page1 product">
 								<div class="row">
 
+									<!-- four car items all take up 3 columns -->
 
-									<!-- Four carousel items, each taking up three columns -->
+									<!-- item1 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1" class="carousel-item-content position-relative bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<div class="text-center offerTag position-absolute top-0 end-0 mt-2 me-2"> <!-- Adjusted classes -->
+												<div class="bg-christmas text-uppercase rounded-2 px-3 py-1">
+													<p class="m-0 text-item8 fs-5 text-uppercase fw-semibold">Festive</p>
+												</div>
+											</div>
+											<img src="./images/chicken sub/chk12.png" class="img-fluid py-5">
+										</div>
+										
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">Jolly Holly Festive Feast</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">12.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item2 -->
 									<div class="col-md-3 item">
 										<div id="chkSub1"
-											class="carousel-item-content bg-dark rounded-2 py-5 shadow d-flex justify-content-center">
-											<img src="./images/chicken.png" class="img-fluid py-3">
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk3.png" class="img-fluid py-5">
 										</div>
 										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Cajun Irish</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">9.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
 
+									<!-- item3 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk4.png" class="img-fluid py-5">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Light Sub</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">10.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item4 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1" class="carousel-item-content position-relative bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<div class="text-center offerTag position-absolute top-0 end-0 mt-2 me-2"> <!-- Adjusted classes -->
+												<div class="bg-item7 text-uppercase rounded-2 px-3 py-1">
+													<p class="m-0 text-item8 fs-5 text-uppercase fw-semibold">New</p>
+												</div>
+											</div>
+											<img src="./images/chicken sub/chk1.png" class="img-fluid py-5">
+										</div>
+										
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Chicken Wonder</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">12.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- page 2 -->
+							<div class="carousel-item py-5 page2">
+								<div class="row">
+									<!-- four car items all take up 3 columns -->
+
+									<!-- item1 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk11.png" class="img-fluid ">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">'I'm not Hungry'</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">10.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item2 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1" class="carousel-item-content position-relative bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<div class="text-center offerTag position-absolute top-0 end-0 mt-2 me-2"> <!-- Adjusted classes -->
+												<div class="bg-item7 text-uppercase rounded-2 px-3 py-1">
+													<p class="m-0 text-item8 fs-5 text-uppercase fw-semibold">New</p>
+												</div>
+											</div>
+											<img src="./images/chicken sub/chk6.png" class="img-fluid py-4 flipped-image">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Skewer Chicken</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">14.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item3 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chicken.png" class="img-fluid py-4">
+										</div>
+										<div class="row">
 											<div class="d-flex justify-content-between align-items-center py-2">
 												<h5 class="fs-5 fw-bold m-0">The Mexican Melt</h5>
 												<a class="text-muted" href=""><i
 														class="bi bi-info-circle fs-5 info"></i></a>
 											</div>
-
 										</div>
-										<div class="row mx-0">
-											  <div class="btn btn-prod">
-												<div class="row text-light-primary">
-												  <div class="col-auto fw-bold fs-5">12.99 €</div>
-												  <div class="col"></div>
-												  <div class="col-auto fs-5 fw-medium">Add to Basket</div>
-												</div>
-											  </div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">10.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
 											</div>
-										  </div>
+										</div>
 									</div>
 
-
-								</div>
-							</div>
-							<div class="carousel-item py-5 page2">
-								<div class="row">
-
-
-									<!-- Five carousel items, each taking up two columns -->
-									<div class="col-md-2 item catButton">
-										<div
-											class="carousel-item-content bg-item6 rounded-5 py-3 shadow d-flex justify-content-center flipped-image">
-											<img src="./images/tuna.png" width="156">
+									<!-- item4 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk10.png" class="img-fluid">
 										</div>
-										<div class="py-2 ">
-											<i class="bi bi-check-lg"></i>
-											<h5>Tuna Subs</h5>
+										
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">Teriyaki Chicken</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
 										</div>
-									</div>
-									<div class="col-md-2 item catButton">
-										<div
-											class="carousel-item-content bg-item7 rounded-5 py-3 shadow d-flex justify-content-center">
-											<img src="./images/salad.png" width="156">
-										</div>
-										<div class="py-2 ">
-											<i class="bi bi-check-lg"></i>
-											<h5>Salads</h5>
-										</div>
-									</div>
-									<div class="col-md-2 item catButton">
-										<div
-											class="carousel-item-content bg-item8 rounded-5 py-3 shadow d-flex justify-content-center">
-											<img src="./images/sides.png" width="156">
-										</div>
-										<div class="py-2 ">
-											<i class="bi bi-check-lg"></i>
-											<h5>Sides</h5>
-										</div>
-									</div>
-									<div class="col-md-2 item catButton">
-										<div
-											class="carousel-item-content bg-item9 rounded-5 py-3 shadow d-flex justify-content-center py-2">
-											<img src="./images/drinks.png" width="156">
-										</div>
-										<div class="py-2 ">
-											<i class="bi bi-check-lg"></i>
-											<h5>Drinks</h5>
-										</div>
-									</div>
-									<div class="col-md-2 item catButton">
-										<div
-											class="carousel-item-content bg-item10 rounded-5 py-3 shadow d-flex justify-content-center py-2">
-											<img src="./images/deals.png" width="156">
-										</div>
-										<div class="py-2 ">
-											<i class="bi bi-check-lg"></i>
-											<h5>Deals</h5>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">13.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#subChk" data-bs-slide="prev">
+				<!-- buttons -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#chkProd" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon black" aria-hidden="true"></span>
 				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#subChk" data-bs-slide="next">
+				<button class="carousel-control-next" type="button" data-bs-target="#chkProd" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				</button>
+			</div>
+			<div class="col-1"></div> <!-- Skip one column -->
+		</div>
+	</div>
+	<!-- vegProd -->
+	<div id="veganProd" class="container-fluid bg-prod-bg py-5 carousels ">
+		<div class="container-lg">
+			<div class="row">
+				<div class="d-flex justify-content-start ">
+					<h2 class="text-item2">Vegan</h2>
+					<h2>&nbsp;Subs</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="d-flex justify-content-end">
+					<a class=" text-muted fw-bold seeAll" href="menu.html">
+						<p>See Menu<i class="bi bi-arrow-right px-1"></i></p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="vegProd" class="carousel slide">
+				<div class="container-lg">
+					<div class="carousel-inner">
+						<div class="col-md-12">
+							<div class="carousel-item py-5 active page1 product">
+								<div class="row">
+
+									<!-- four car items all take up 3 columns -->
+
+									<!-- item1 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1" class="carousel-item-content position-relative bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<div class="text-center offerTag position-absolute top-0 end-0 mt-2 me-2"> <!-- Adjusted classes -->
+												<div class="bg-christmas text-uppercase rounded-2 px-3 py-1">
+													<p class="m-0 text-item8 fs-5 text-uppercase fw-semibold">Festive</p>
+												</div>
+											</div>
+											<img src="./images/chicken sub/chk12.png" class="img-fluid py-5">
+										</div>
+										
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">Jolly Holly Festive Feast</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">12.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item2 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk3.png" class="img-fluid py-5">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Cajun Irish</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">9.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item3 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk4.png" class="img-fluid py-5">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Light Sub</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">10.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item4 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1" class="carousel-item-content position-relative bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<div class="text-center offerTag position-absolute top-0 end-0 mt-2 me-2"> <!-- Adjusted classes -->
+												<div class="bg-item7 text-uppercase rounded-2 px-3 py-1">
+													<p class="m-0 text-item8 fs-5 text-uppercase fw-semibold">New</p>
+												</div>
+											</div>
+											<img src="./images/chicken sub/chk1.png" class="img-fluid py-5">
+										</div>
+										
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Chicken Wonder</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">12.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+							<!-- page 2 -->
+							<div class="carousel-item py-5 page2">
+								<div class="row">
+									<!-- four car items all take up 3 columns -->
+
+									<!-- item1 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk11.png" class="img-fluid ">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">'I'm not Hungry'</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">10.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item2 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1" class="carousel-item-content position-relative bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<div class="text-center offerTag position-absolute top-0 end-0 mt-2 me-2"> <!-- Adjusted classes -->
+												<div class="bg-item7 text-uppercase rounded-2 px-3 py-1">
+													<p class="m-0 text-item8 fs-5 text-uppercase fw-semibold">New</p>
+												</div>
+											</div>
+											<img src="./images/chicken sub/chk6.png" class="img-fluid py-4 flipped-image">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Skewer Chicken</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">14.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item3 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chicken.png" class="img-fluid py-4">
+										</div>
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">The Mexican Melt</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">10.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+
+									<!-- item4 -->
+									<div class="col-md-3 item">
+										<div id="chkSub1"
+											class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+											<img src="./images/chicken sub/chk10.png" class="img-fluid">
+										</div>
+										
+										<div class="row">
+											<div class="d-flex justify-content-between align-items-center py-2">
+												<h5 class="fs-5 fw-bold m-0">Teriyaki Chicken</h5>
+												<a class="text-muted" href=""><i
+														class="bi bi-info-circle fs-5 info"></i></a>
+											</div>
+										</div>
+										<div class="row mx-0 align-items-center">
+											<div
+												class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+												<span class="fw-bold fs-5">13.99 €</span>
+												<span class="fs-5 fw-medium">Add to Basket</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- buttons -->
+				<button class="carousel-control-prev" type="button" data-bs-target="#vegProd" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon black" aria-hidden="true"></span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#vegProd" data-bs-slide="next">
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 				</button>
 			</div>

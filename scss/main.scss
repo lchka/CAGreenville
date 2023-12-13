@@ -8,12 +8,14 @@
 
 $custom-colors: (
   "dark-footer": #272728,
-  "light-grey":#4d4d4d,
-  "light-footer":#e6e6e6,
+  "light-grey": #4d4d4d,
+  "light-footer": #e6e6e6,
+  "prod-bg": #f9f9f9,
+  "christmas": #f60000,
   "primary-light": #fff7e2,
   "primary-color": white,
   "success": #fff7e2,
-  "prod": #C0D441,
+  "prod": #c0d441,
   "item1": #fac710,
   "item2": #8fd14f,
   "item3": #e87b00,
@@ -36,16 +38,22 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   overflow: hidden;
   .arrowRounded {
     transition: transform 0.3s ease;
-    
   }
   .contentText {
     transition: transform 0.3s ease;
   }
 }
+// Your SCSS code
+.chicken-prod {
+  display: none;
+}
 
+#chickenProd:target {
+  display: block;
+}
 .orderNow {
   @include arrowTextHover;
-  
+
   &:hover {
     .arrowRounded {
       transform: translateX(305%);
@@ -58,7 +66,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 .orderNow2 {
   @include arrowTextHover;
-  
+
   &:hover {
     .arrowRounded {
       transform: translateX(205%);
@@ -71,7 +79,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 .orderNow3 {
   @include arrowTextHover;
-  
+
   &:hover {
     .arrowRounded {
       transform: translateX(185%);
@@ -82,8 +90,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     }
   }
 }
-i .arrow {
-  -webkit-text-stroke: 1.5px rgb(57, 57, 57);
+.seeAll i {
+  -webkit-text-stroke: 1.2px rgb(57, 57, 57);
 }
 
 //categories section
@@ -115,59 +123,52 @@ i .arrow {
       color: rgb(0, 133, 0);
     }
   }
-.catButton2 {
-      display: inline-block;
+  .catButton2 {
+    display: inline-block;
     cursor: pointer;
     h5 {
       display: inline-block;
       color: rgb(0, 133, 0);
     }
     i.bi-check-lg {
-      
-      
       font-size: 20px;
     }
-
-   
-
   }
   .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(100%);
-}
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
 }
 @media (max-width: 767.98px) {
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
     opacity: 0.1;
-}
-}//changes carousel svg opacity on mobile responsive
+  }
+} //changes carousel svg opacity on mobile responsive
 @media (max-width: 767.98px) {
   .categories .carousel-item {
     padding-left: 50px;
     padding-right: 50px;
   }
-
-}//changes carousel padding on mobile responsive
+} //changes carousel padding on mobile responsive
 //testimonial section
 .testimonials {
   .backgroundColor {
-  border-radius: 30px;
-  height: 500px;
-  transform: rotate(180deg);
-  .bgcContent {
+    border-radius: 30px;
+    height: 500px;
     transform: rotate(180deg);
+    .bgcContent {
+      transform: rotate(180deg);
+    }
   }
-}
-.review {
-  border: 6px solid #ffe399;
-}
+  .review {
+    border: 6px solid #ffe399;
+  }
 }
 @media (max-width: 767.98px) {
   .testimonials .backgroundColor {
     height: 365px;
   }
-  
 }
 
 .flipped-image {
@@ -204,7 +205,6 @@ i .arrow {
   }
 }
 
-
 @media (max-width: 767.98px) {
   .cateringOverflow {
     align-items: center;
@@ -215,55 +215,53 @@ i .arrow {
       margin: 5px 0; // Adding some margin between stacked texts
     }
   }
-}//handles header overflow mobile
-hr.underline  {
-    opacity: 100%;
-    width: 100px; // Set the width to 50 pixels
-    border: none; // Remove default border
-    height: 6px; // Set the height/thickness of the line
-}//header underline
+} //handles header overflow mobile
+hr.underline {
+  opacity: 100%;
+  width: 100px; // Set the width to 50 pixels
+  border: none; // Remove default border
+  height: 6px; // Set the height/thickness of the line
+} //header underline
 
 .p,
-.li
-h4,
+.li h4,
 h5 {
   font: {
     family: "Open Sans", sans-serif;
   }
-}//sets font family
-h2,h3,h1 {
+} //sets font family
+h2,
+h3,
+h1 {
   font-family: "Fredoka", sans-serif;
   font-size: 68px;
-}//sets font family and defaults to 64px get overwritten in bs
+} //sets font family and defaults to 64px get overwritten in bs
 @media (max-width: 767.98px) {
   h2 {
     font-size: 44px;
   }
-}//alters fs for mobile
+} //alters fs for mobile
 
 .imageMain {
   background-image: url(../images/headerCropped.jpg);
   background-size: cover;
-}//image for header
+} //image for header
 
 .navbar {
-  backdrop-filter: blur(2px); 
-}//adds blur to nav
+  backdrop-filter: blur(2px);
+} //adds blur to nav
 @media (max-width: 767.98px) {
   .navbar {
     background-color: white; /* Color for mobile devices */
   }
-}//change colour of nav for mobile
+} //change colour of nav for mobile
 
 //footer
 footer {
   .topSection a {
     color: #4d4d4d;
     &:hover {
-      color:#272728;
+      color: #272728;
     }
   }
-
-}//alters the icon hover
-
-
+} //alters the icon hover

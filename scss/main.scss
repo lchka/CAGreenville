@@ -13,6 +13,7 @@ $custom-colors: (
   "primary-light": #fff7e2,
   "primary-color": white,
   "success": #fff7e2,
+  "prod": #C0D441,
   "item1": #fac710,
   "item2": #8fd14f,
   "item3": #e87b00,
@@ -81,8 +82,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     }
   }
 }
+i .arrow {
+  -webkit-text-stroke: 1.5px rgb(57, 57, 57);
+}
+
 //categories section
-.categories {
+.carousels {
   .catButton {
     display: inline-block;
     cursor: pointer;

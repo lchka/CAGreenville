@@ -51,6 +51,14 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 #chickenProd:target {
   display: block;
 }
+
+.vegan-prod {
+  display: none;
+}
+
+#veganProd:target {
+  display: block;
+}
 .orderNow {
   @include arrowTextHover;
 

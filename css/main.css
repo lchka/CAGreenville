@@ -13649,6 +13649,14 @@ textarea.form-control-lg {
   display: block;
 }
 
+.vegan-prod {
+  display: none;
+}
+
+#veganProd:target {
+  display: block;
+}
+
 .orderNow {
   position: relative;
   overflow: hidden;

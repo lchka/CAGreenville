@@ -13758,7 +13758,7 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 767.98px) {
-  .carousel-item {
+  .products .carousel-item {
     padding-left: 50px;
     padding-right: 50px;
   }

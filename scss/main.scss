@@ -44,21 +44,35 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 // Your SCSS code
-.chicken-prod {
-  display: none;
-}
-
-#chickenProd:target {
-  display: block;
-}
-
-.vegan-prod {
-  display: none;
-}
-
-#veganProd:target {
-  display: block;
-}
+ .chicken-prod {
+    display: none;
+  }
+  
+  #chickenProd:target {
+    display: block;
+  }
+  
+  .vegan-prod {
+    display: none;
+  }
+  
+  #veganProd:target {
+    display: block;
+  }
+  .beef-prod {
+    display: none;
+  }
+  
+  #beefProd:target {
+    display: block;
+  }
+  .gen-prod {
+    display: none;
+  }
+  
+  #genProd:target {
+    display: block;
+  }
 .orderNow {
   @include arrowTextHover;
 
@@ -146,6 +160,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   .carousel-control-next-icon {
     filter: invert(100%);
   }
+  
 }
 @media (max-width: 767.98px) {
   .carousel-control-prev-icon,

@@ -13657,6 +13657,22 @@ textarea.form-control-lg {
   display: block;
 }
 
+.beef-prod {
+  display: none;
+}
+
+#beefProd:target {
+  display: block;
+}
+
+.gen-prod {
+  display: none;
+}
+
+#genProd:target {
+  display: block;
+}
+
 .orderNow {
   position: relative;
   overflow: hidden;

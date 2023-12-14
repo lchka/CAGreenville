@@ -167,7 +167,7 @@
 												class="carousel-item-content bg-item3 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/beef.png" width="160">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#beefProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Beef Subs</h5>
@@ -179,7 +179,7 @@
 												class="carousel-item-content bg-item4 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/halal.png" width="160">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#genProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Halal Subs</h5>
@@ -191,7 +191,7 @@
 												class="carousel-item-content bg-item5 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/pork.png" width="160">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#genProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Pork Subs</h5>
@@ -210,7 +210,7 @@
 												class="carousel-item-content bg-item6 rounded-5 py-3 shadow d-flex justify-content-center flipped-image">
 												<img src="./images/tuna.png" width="156">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#genProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Tuna Subs</h5>
@@ -222,7 +222,7 @@
 												class="carousel-item-content bg-item7 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/salad.png" width="156">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#genProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Salads</h5>
@@ -234,7 +234,7 @@
 												class="carousel-item-content bg-item8 rounded-5 py-3 shadow d-flex justify-content-center">
 												<img src="./images/sides.png" width="156">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#genProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Sides</h5>
@@ -246,7 +246,7 @@
 												class="carousel-item-content bg-item9 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/drinks.png" width="156">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#genProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Drinks</h5>
@@ -258,7 +258,7 @@
 												class="carousel-item-content bg-item10 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 												<img src="./images/deals.png" width="156">
 											</div>
-											<a class="text-decoration-none text-dark" href="product.html">
+											<a class="text-decoration-none text-dark toggle-link" href="#genProd">
 												<div class="py-2 ">
 													<i class="bi bi-check-lg"></i>
 													<h5>Deals</h5>
@@ -748,12 +748,14 @@
 
 										<!-- item4 -->
 										<div class="col-md-3 item ">
-											<div id="moreSoon" class="carousel-item-content border border-item1 border-2 rounded-2 shadow d-flex justify-content-center align-items-center text-center " style="height: 460px;">
+											<div id="moreSoon"
+												class="carousel-item-content border border-item1 border-2 rounded-2 shadow d-flex justify-content-center align-items-center text-center "
+												style="height: 460px;">
 												<div>
 													<h5 class="fs-4 text-item1">More Coming Soon!</h5>
 												</div>
 											</div>
-											
+
 										</div>
 									</div>
 								</div>
@@ -769,6 +771,141 @@
 					</button>
 				</div>
 				<div class="col-1"></div> <!-- Skip one column -->
+			</div>
+		</div>
+		<!--beefCategoryViewHidden-->
+		<div id="beefProd" class="products beef-prod container-fluid bg-prod-bg py-5 carousels ">
+			<div class="container-lg">
+				<div class="row">
+					<div class="d-flex justify-content-start ">
+						<h2 class="text-item3">Beef</h2>
+						<h2>&nbsp;Subs</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="d-flex justify-content-end">
+						<a class=" text-muted fw-bold seeAll" href="menu.html">
+							<p>See Menu<i class="bi bi-arrow-right px-1"></i></p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="vegProd" class="carousel slide">
+					<div class="container-lg">
+						<div class="carousel-inner">
+							<div class="col-md-12">
+
+								<div class="carousel-item py-5 active page1 product">
+									<div class="row">
+
+										<!-- four car items all take up 3 columns -->
+
+										<!-- item1 -->
+										<div class="col-md-3 item">
+											<div id="beef1"
+												class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+												<img src="./images/beef/beef.png" class="img-fluid py-5">
+											</div>
+
+											<div class="row">
+												<div class="d-flex justify-content-between align-items-center py-2">
+													<h5 class="fs-5 fw-bold m-0">Delightfully Light</h5>
+													<a class="text-muted" href=""><i
+															class="bi bi-info-circle fs-5 info"></i></a>
+												</div>
+											</div>
+											<div class="row mx-0 align-items-center pb-5">
+												<div
+													class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+													<span class="fw-bold fs-5">11.99 €</span>
+													<span class="fs-5 fw-medium">Add to Basket</span>
+												</div>
+											</div>
+										</div>
+
+										<!-- item2 -->
+										<div class="col-md-3 item">
+											<div id="chkSub1"
+												class="carousel-item-content bg-item8 rounded-2 py-5 shadow d-flex justify-content-center">
+												<img src="./images/beef/beef2.png" class="img-fluid py-5 ">
+											</div>
+											<div class="row">
+												<div class="d-flex justify-content-between align-items-center py-2">
+													<h5 class="fs-5 fw-bold m-0">Cheesy Fresh Steak</h5>
+													<a class="text-muted" href=""><i
+															class="bi bi-info-circle fs-5 info"></i></a>
+												</div>
+											</div>
+											<div class="row mx-0 align-items-center pb-5">
+												<div
+													class="btn btn-prod d-flex justify-content-between align-items-center w-100">
+													<span class="fw-bold fs-5">12.99 €</span>
+													<span class="fs-5 fw-medium">Add to Basket</span>
+												</div>
+											</div>
+										</div>
+
+										<!-- item4 -->
+										<div class="col-md-3 item ">
+											<div id="moreSoon"
+												class="carousel-item-content border border-item1 border-2 rounded-2 shadow d-flex justify-content-center align-items-center text-center "
+												style="height: 460px;">
+												<div>
+													<h5 class="fs-4 text-item1">More Coming Soon!</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--genCategoryViewHidden-->
+		<div id="genProd" class="products gen-prod container-fluid bg-prod-bg py-5 carousels ">
+			<div class="container-lg">
+				<div class="row">
+					<div class="d-flex justify-content-start ">
+						<h2 class="text-muted">All</h2>
+						<h2>&nbsp;Products</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="d-flex justify-content-end">
+						<a class=" text-muted fw-bold seeAll" href="menu.html">
+							<p>See Menu<i class="bi bi-arrow-right px-1"></i></p>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div id="genProd" class="carousel slide">
+					<div class="container-lg">
+						<div class="carousel-inner">
+							<div class="col-md-12">
+
+								<div class="carousel-item py-5 active page1 product">
+									<div class="row">
+
+										<!-- item4 -->
+										<div class="col-md-3 item ">
+											<div id="moreSoon"
+												class="carousel-item-content border border-item1 border-2 rounded-2 shadow d-flex justify-content-center align-items-center text-center "
+												style="height: 460px;">
+												<div>
+													<h5 class="fs-4 text-item1">More Coming Soon!</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- hot offers -->

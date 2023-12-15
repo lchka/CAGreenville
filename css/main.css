@@ -13888,9 +13888,15 @@ footer .topSection a:hover {
   }
 }
 @media (max-width: 767.98px) {
-  hr .cart {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .cartProduct {
+    padding: 0px 50px 0px 50px;
+  }
+  .mainCart hr {
+    margin-top: 25px;
+    padding-bottom: 25px;
+  }
+  .underline {
+    margin-bottom: 0px;
   }
 }
 .chicken-prod {

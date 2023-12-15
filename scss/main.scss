@@ -45,7 +45,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 }
 
 
-
+.products .item {
+  padding-bottom: 30px;
+}
 
 
 

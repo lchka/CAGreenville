@@ -13641,6 +13641,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.products .item {
+  padding-bottom: 30px;
+}
+
 .collection-delivery .btn {
   font-family: "Open Sans", sans-serif;
 }

@@ -92,15 +92,19 @@
 						</div>
 
 						<!-- order now button -->
-						<button type="button" class="btn btn-item1 rounded-5 orderNow mb-5">
-							<div class="d-inline-flex align-items-center">
-								<div class="arrowRounded rounded-circle bg-light text-dark d-flex justify-content-center align-items-center"
-									style="width: 35px; height: 35px">
-									<i class="bi bi-arrow-right fs-4"></i>
+						<a href="#pickUp" class="btn-link">
+							
+							<button type="button" class="btn btn-item1 rounded-5 orderNow mb-5">
+								<div class="d-inline-flex align-items-center">
+									<div class="arrowRounded rounded-circle bg-light text-dark d-flex justify-content-center align-items-center"
+										style="width: 35px; height: 35px;">
+										<i class="bi bi-arrow-right fs-4"></i>
+									</div>
+									<span class="contentText ms-1 fs-5 fw-semibold">Order Now</span>
 								</div>
-								<span class="contentText ms-1 fs-5 fw-semibold">Order Now</span>
-							</div>
-						</button>
+							</button>
+
+						</a>
 					</div>
 					<div class="col-md-6 pt-5">
 						<img src="images/productPagebg.png" class="img-fluid" alt="" />
@@ -111,7 +115,7 @@
 	</header>
 
 	<!-- categories -->
-	<div class="products container-fluid bg-primary-light py-5 carousels">
+	<div id="categories" class="products container-fluid bg-primary-light py-5 carousels">
 		<div class="row text-center col-md-12">
 			<h2>Categories</h2>
 			<div class="container-lg">
@@ -180,7 +184,7 @@
 											</div>
 										</a>
 									</div>
-									<div class="col-md-2 item catButton2">
+									<div id="pickUp" class="col-md-2 item catButton2">
 										<div
 											class="carousel-item-content bg-item5 rounded-5 py-3 shadow d-flex justify-content-center py-2">
 											<img src="./images/pork.png" width="160">
@@ -277,17 +281,17 @@
 		</div>
 	</div>
 	<!-- collection or delivery -->
-	<div class="pickUp container-lg px-0">
-		<div class="container-lg py-4">
+	<div id="pickUp" class="pickUp container-lg px-0">
+		<div class="container-lg pt-4">
 			<div class="row">
 				<div class="d-flex justify-content-start">
 					<h2 class="text-item1">Collection</h2>
-					<h2>&nbsp;or Delivery</h2>
+					<h2>&nbsp;or Delivery?</h2>
 				</div>
 			</div>
 		</div>
-		<div class="row d-flex justify-content-start align-items-center pb-5">
-			<div class="fieldInput col-md-5 my-auto locationButton">
+		<div class="row d-flex justify-content-start align-items-center pb-5 px-3 ">
+			<div class="fieldInput col-md-5 my-auto pb-4 pt-3 locationButton">
 				<div class="">
 					<div class="input-group">
 						<input type="search" class="form-control rounded-5 border border-1 border-muted  py-2" id="location"
@@ -295,11 +299,11 @@
 					</div>
 				</div>
 			</div>
-			<div class="collection-delivery col-md-6 d-inline-flex">
+			<div class="collection-delivery col-md-6 d-inline-flex pb-2">
 				<input type="radio" id="option1" name="options" class="d-none" />
 				<label for="option1"
 					class="btn col-md-4 d-flex justify-content-center align-items-center mx-2 rounded-5 py-0 fs-5 border border-1 border-muted fw-medium">
-					<i class="bi bi-bicycle fs-5 px-2"></i> Delivery
+					<i class="bi bi-bicycle fs-4 px-2"></i> Delivery
 				</label>
 
 				<label for="option1"
@@ -307,6 +311,7 @@
 					<i class="bi bi-person"></i> Collection
 				</label>
 			</div>
+			<p class="text-dark fw-medium  px-4">Delivery Details will be taken at checkout!</p>
 		</div>
 	</div>
 	<!--chkCategoryView-->

@@ -43,16 +43,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     transition: transform 0.3s ease;
   }
 }
-
-
 .products .item {
   padding-bottom: 30px;
 }
-
-
-
-
-
 .collection-delivery .btn {
   font-family: "Open Sans", sans-serif;
 
@@ -84,9 +77,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     }
   }
 }
-
-
-
 header {
 .orderNow {
   @include arrowTextHover;
@@ -303,7 +293,6 @@ footer {
     }
   }
 } //alters the icon hover
-
 
 //all these target the visibilty of the products
 .chicken-prod {

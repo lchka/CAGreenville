@@ -13899,6 +13899,15 @@ footer .topSection a:hover {
     margin-bottom: 0px;
   }
 }
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  .total-text::before {
+    content: "Price: "; /* Additional text for mobile */
+  }
+  .total-text2::before {
+    content: "Total: "; /* Additional text for mobile */
+  }
+}
 .chicken-prod {
   display: none;
 }

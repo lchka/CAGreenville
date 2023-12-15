@@ -13862,8 +13862,8 @@ h1,
   h2, .h2 {
     font-size: 44px;
   }
-  .collection-delivery .btn h2, .collection-delivery .btn .h2 {
-    font-size: 15px;
+  .collection-delivery .btn {
+    width: 100%;
     margin-bottom: 10px;
   }
 }

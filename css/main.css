@@ -13641,90 +13641,80 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.chicken-prod {
-  display: none;
+.collection-delivery .btn {
+  font-family: "Open Sans", sans-serif;
+}
+.collection-delivery .btn:hover {
+  background-color: #ffffff;
+  border: transparent;
+  color: #fac710;
+}
+.collection-delivery .btn:active {
+  background-color: #f3f3f3;
 }
 
-#chickenProd:target {
-  display: block;
+.locationButton input.form-control {
+  border-color: #ced4da;
+  transition: border-color 0.3s ease;
+}
+.locationButton input.form-control:hover {
+  border-color: #fac710;
+}
+.locationButton input.form-control:focus {
+  border-color: #fac710;
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(255, 183, 0, 0.25);
 }
 
-.vegan-prod {
-  display: none;
-}
-
-#veganProd:target {
-  display: block;
-}
-
-.beef-prod {
-  display: none;
-}
-
-#beefProd:target {
-  display: block;
-}
-
-.gen-prod {
-  display: none;
-}
-
-#genProd:target {
-  display: block;
-}
-
-.orderNow {
+header .orderNow {
   position: relative;
   overflow: hidden;
 }
-.orderNow .arrowRounded {
+header .orderNow .arrowRounded {
   transition: transform 0.3s ease;
 }
-.orderNow .contentText {
+header .orderNow .contentText {
   transition: transform 0.3s ease;
 }
-.orderNow:hover .arrowRounded {
+header .orderNow:hover .arrowRounded {
   transform: translateX(305%);
 }
-.orderNow:hover .contentText {
+header .orderNow:hover .contentText {
   transform: translateX(-35%);
 }
-
-.orderNow2 {
+header .orderNow2 {
   position: relative;
   overflow: hidden;
 }
-.orderNow2 .arrowRounded {
+header .orderNow2 .arrowRounded {
   transition: transform 0.3s ease;
 }
-.orderNow2 .contentText {
+header .orderNow2 .contentText {
   transition: transform 0.3s ease;
 }
-.orderNow2:hover .arrowRounded {
+header .orderNow2:hover .arrowRounded {
   transform: translateX(205%);
 }
-.orderNow2:hover .contentText {
+header .orderNow2:hover .contentText {
   transform: translateX(-75%);
 }
-
-.orderNow3 {
+header .orderNow3 {
   position: relative;
   overflow: hidden;
 }
-.orderNow3 .arrowRounded {
+header .orderNow3 .arrowRounded {
   transition: transform 0.3s ease;
 }
-.orderNow3 .contentText {
+header .orderNow3 .contentText {
   transition: transform 0.3s ease;
 }
-.orderNow3:hover .arrowRounded {
+header .orderNow3:hover .arrowRounded {
   transform: translateX(185%);
 }
-.orderNow3:hover .contentText {
+header .orderNow3:hover .contentText {
   transform: translateX(-105%);
 }
-
-.seeAll i {
+header .seeAll i {
   -webkit-text-stroke: 1.2px rgb(57, 57, 57);
 }
 
@@ -13887,4 +13877,36 @@ footer .topSection a {
 }
 footer .topSection a:hover {
   color: #272728;
+}
+
+.chicken-prod {
+  display: none;
+}
+
+#chickenProd:target {
+  display: block;
+}
+
+.vegan-prod {
+  display: none;
+}
+
+#veganProd:target {
+  display: block;
+}
+
+.beef-prod {
+  display: none;
+}
+
+#beefProd:target {
+  display: block;
+}
+
+.gen-prod {
+  display: none;
+}
+
+#genProd:target {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

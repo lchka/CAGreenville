@@ -43,36 +43,49 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     transition: transform 0.3s ease;
   }
 }
-// Your SCSS code
- .chicken-prod {
-    display: none;
+
+
+
+
+
+
+
+
+.collection-delivery .btn {
+  font-family: "Open Sans", sans-serif;
+
+  &:hover {
+    background-color: #ffffff;
+    border:transparent;
+    color: #fac710;
   }
-  
-  #chickenProd:target {
-    display: block;
+  &:active {
+    background-color: #f3f3f3;
   }
-  
-  .vegan-prod {
-    display: none;
+
+}
+
+.locationButton {
+  input.form-control {
+    // Normal state styles
+    border-color: #ced4da; // Default border color
+    transition: border-color 0.3s ease; // Smooth transition for border color change
+
+    &:hover {
+      border-color: #fac710; // Change border color on hover
+    }
+
+    &:focus {
+      border-color: #fac710; // Change border color on focus/click
+      outline: none; // Remove default focus outline if desired
+      box-shadow: 0 0 0 0.2rem rgba(255, 183, 0, 0.25); // Example of adding a custom focus effect
+    }
   }
-  
-  #veganProd:target {
-    display: block;
-  }
-  .beef-prod {
-    display: none;
-  }
-  
-  #beefProd:target {
-    display: block;
-  }
-  .gen-prod {
-    display: none;
-  }
-  
-  #genProd:target {
-    display: block;
-  }
+}
+
+
+
+header {
 .orderNow {
   @include arrowTextHover;
 
@@ -115,7 +128,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .seeAll i {
   -webkit-text-stroke: 1.2px rgb(57, 57, 57);
 }
-
+}
 //categories section
 .carousels {
   .catButton {
@@ -288,3 +301,35 @@ footer {
     }
   }
 } //alters the icon hover
+
+
+//all these target the visibilty of the products
+.chicken-prod {
+  display: none;
+}
+
+#chickenProd:target {
+  display: block;
+}
+
+.vegan-prod {
+  display: none;
+}
+
+#veganProd:target {
+  display: block;
+}
+.beef-prod {
+  display: none;
+}
+
+#beefProd:target {
+  display: block;
+}
+.gen-prod {
+  display: none;
+}
+
+#genProd:target {
+  display: block;
+}

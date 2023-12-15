@@ -261,7 +261,33 @@
 				
 				<!-- Right Side Content -->
 				<div class="col-md-4">
+					<!-- pickup -->
+					<div id="pickUp" class="container-lg pb-4">
+						<div class="pb-4 ">
+							<div class="row">
+								<div class="d-flex ">
+									<h2 class="fs-1">	Delivery</h2>
+									<h2 class="fs-1">&nbsp;or</h2>
+									<h2 class="text-item1 fs-1">&nbsp;Collection</h2>
+								</div>
+							</div>
+						</div>
+						<div class="row d-flex  align-items-center pb-3 ">
+							<div class="collection-delivery  d-inline-flex pb-2">
+								<input type="radio" id="option1" name="options" class="d-none" />
+								<label for="option1"
+									class="btn col-md-6 d-flex justify-content-center align-items-center  rounded-5 py-0 fs-5 border border-1 border-muted fw-medium">
+									<i class="bi bi-bicycle fs-4 px-2"></i> Delivery
+								</label>
 					
+								<label for="option2"
+									class="btn col-md-6 d-flex justify-content-center align-items-center mx-2 rounded-5 fs-5 fw-medium border border-1 border-muted">
+									<i class="bi bi-person px-2"></i> Collection
+								</label>
+							</div>
+						</div>
+					</div>
+					<!-- summary -->
 					<div class="container-lg">
 						<div class=" rounded-top-3 bg-prod-bg border border-1 border-muted py-5 px-5">
 							<h5>Order Summary</h5>
@@ -278,7 +304,7 @@
 								<p>Delivery Charge:</p>
 								<p>N/A</p>
 							</div>
-							<a class="text-decoration-none text-prod" href="">
+							<a class="text-decoration-none text-item2 text-prod" href="">
 								<p>Add a coupon code <i class="bi bi-arrow-right"></i></p>
 							</a>
 
@@ -288,33 +314,9 @@
 							<p class="fs-4 m-0">Total</p>
 							<p class="fs-4 m-0 fw-medium ">€73.22</p>
 						</div>
-						<button type="button" class=" py-2 text-item8 rounded-3 col-md-12 fs-5 fw-medium btn btn-primary btn-prod px-5">Checkout</button>
+						<button type="button" class=" py-2 text-item8 rounded-3 col-md-12 fs-5 fw-medium btn btn-primary btn-item2 px-5">Checkout</button>
 					</div>
-					<div id="pickUp" class="container-lg">
-						<div class="pb-4 pt-4">
-							<div class="row">
-								<div class="d-flex ">
-									<h2 class="fs-2">	Delivery</h2>
-									<h2 class="fs-2">&nbsp;or</h2>
-									<h2 class="text-item1 fs-2">&nbsp;Collection</h2>
-								</div>
-							</div>
-						</div>
-						<div class="row d-flex  align-items-center pb-4 ">
-							<div class="collection-delivery  d-inline-flex pb-2">
-								<input type="radio" id="option1" name="options" class="d-none" />
-								<label for="option1"
-									class="btn col-md-6 d-flex justify-content-center align-items-center  rounded-5 py-0 fs-5 border border-1 border-muted fw-medium">
-									<i class="bi bi-bicycle fs-4 px-2"></i> Delivery
-								</label>
 					
-								<label for="option2"
-									class="btn col-md-6 d-flex justify-content-center align-items-center mx-2 rounded-5 fs-5 fw-medium border border-1 border-muted">
-									<i class="bi bi-person px-2"></i> Collection
-								</label>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>

@@ -43,7 +43,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     transition: transform 0.3s ease;
   }
 }
-  
+
 .products .item {
   padding-bottom: 30px;
 }
@@ -52,14 +52,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
   &:hover {
     background-color: #ffffff;
-    border:transparent;
+    border: transparent;
     color: #fac710;
   }
   &:active {
     background-color: #fac710;
     color: white;
   }
-
 }
 
 .locationButton {
@@ -80,48 +79,48 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   }
 }
 header {
-.orderNow {
-  @include arrowTextHover;
+  .orderNow {
+    @include arrowTextHover;
 
-  &:hover {
-    .arrowRounded {
-      transform: translateX(305%);
-    }
+    &:hover {
+      .arrowRounded {
+        transform: translateX(305%);
+      }
 
-    .contentText {
-      transform: translateX(-35%);
-    }
-  }
-}
-.orderNow2 {
-  @include arrowTextHover;
-
-  &:hover {
-    .arrowRounded {
-      transform: translateX(205%);
-    }
-
-    .contentText {
-      transform: translateX(-75%);
+      .contentText {
+        transform: translateX(-35%);
+      }
     }
   }
-}
-.orderNow3 {
-  @include arrowTextHover;
+  .orderNow2 {
+    @include arrowTextHover;
 
-  &:hover {
-    .arrowRounded {
-      transform: translateX(185%);
-    }
+    &:hover {
+      .arrowRounded {
+        transform: translateX(205%);
+      }
 
-    .contentText {
-      transform: translateX(-105%);
+      .contentText {
+        transform: translateX(-75%);
+      }
     }
   }
-}
-.seeAll i {
-  -webkit-text-stroke: 1.2px rgb(57, 57, 57);
-}
+  .orderNow3 {
+    @include arrowTextHover;
+
+    &:hover {
+      .arrowRounded {
+        transform: translateX(185%);
+      }
+
+      .contentText {
+        transform: translateX(-105%);
+      }
+    }
+  }
+  .seeAll i {
+    -webkit-text-stroke: 1.2px rgb(57, 57, 57);
+  }
 }
 //categories section
 .carousels {
@@ -167,7 +166,6 @@ header {
   .carousel-control-next-icon {
     filter: invert(100%);
   }
-  
 }
 @media (max-width: 767.98px) {
   .carousel-control-prev-icon,
@@ -176,7 +174,7 @@ header {
   }
 } //changes carousel svg opacity on mobile responsive
 @media (max-width: 767.98px) {
- .products .carousel-item {
+  .products .carousel-item {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -272,8 +270,8 @@ h1 {
   }
   .collection-delivery .btn {
     width: 100%;
-    margin-bottom: 10px; 
-}
+    margin-bottom: 10px;
+  }
 } //alters fs for mobile
 
 .imageMain {

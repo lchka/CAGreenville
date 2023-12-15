@@ -13654,7 +13654,8 @@ textarea.form-control-lg {
   color: #fac710;
 }
 .collection-delivery .btn:active {
-  background-color: #f3f3f3;
+  background-color: #fac710;
+  color: white;
 }
 
 .locationButton input.form-control {

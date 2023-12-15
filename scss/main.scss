@@ -56,7 +56,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     color: #fac710;
   }
   &:active {
-    background-color: #f3f3f3;
+    background-color: #fac710;
+    color: white;
   }
 
 }

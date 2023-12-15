@@ -6,6 +6,7 @@
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
+//custom colours used across the website
 $custom-colors: (
   "dark-footer": #272728,
   "light-grey": #4d4d4d,
@@ -33,6 +34,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 //import bs
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+//mixin for the hover for orderNow
+
+
 @mixin arrowTextHover {
   position: relative;
   overflow: hidden;
@@ -43,6 +47,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     transition: transform 0.3s ease;
   }
 }
+
+
+//BUTTONS that cannot be placed into main sections
 
 .products .item {
   padding-bottom: 30px;
@@ -78,6 +85,11 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
     }
   }
 }
+
+
+
+//HEADER SCSS
+
 header {
   .orderNow {
     @include arrowTextHover;
@@ -121,8 +133,20 @@ header {
   .seeAll i {
     -webkit-text-stroke: 1.2px rgb(57, 57, 57);
   }
+
+  .navbar {
+    backdrop-filter: blur(2px);
+  } //adds blur to nav
 }
-//categories section
+.imageMain {
+  background-image: url(../images/headerCropped.jpg);
+  background-size: cover;
+} //image for header
+
+
+
+//MAIN SECTION SCSS
+
 .carousels {
   .catButton {
     display: inline-block;
@@ -166,20 +190,8 @@ header {
   .carousel-control-next-icon {
     filter: invert(100%);
   }
-}
-@media (max-width: 767.98px) {
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    opacity: 0.1;
-  }
-} //changes carousel svg opacity on mobile responsive
-@media (max-width: 767.98px) {
-  .products .carousel-item {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-} //changes carousel padding on mobile responsive
-//testimonial section
+}//deals with all carousels
+
 .testimonials {
   .backgroundColor {
     border-radius: 30px;
@@ -192,16 +204,12 @@ header {
   .review {
     border: 6px solid #ffe399;
   }
-}
-@media (max-width: 767.98px) {
-  .testimonials .backgroundColor {
-    height: 365px;
-  }
-}
+}//deals with reviews
 
 .flipped-image {
   transform: scaleX(-1); //Mirrors the image horizontally
-}
+}//if image need to be mirrored
+
 .hotOffer {
   .back1 {
     background-image: url(../images/offer4.jpg);
@@ -223,7 +231,7 @@ header {
     font-weight: 700;
     padding-bottom: 140px;
   }
-}
+}//deals with offer section
 
 .caterBack {
   background-image: url("/images/cater2.jpg");
@@ -231,25 +239,11 @@ header {
   h4 {
     font-family: "Fredoka", sans-serif;
   }
-}
+}//deals with catering 
 
-@media (max-width: 767.98px) {
-  .cateringOverflow {
-    align-items: center;
-    flex-direction: column; // Stacking the text vertically
-    text-align: center; // Center-aligning the text
 
-    h2 {
-      margin: 5px 0; // Adding some margin between stacked texts
-    }
-  }
-} //handles header overflow mobile
-hr.underline {
-  opacity: 100%;
-  width: 100px; // Set the width to 50 pixels
-  border: none; // Remove default border
-  height: 6px; // Set the height/thickness of the line
-} //header underline
+
+//FONT FAMILIES AND DEFAULT SIZE
 
 .p,
 .li h4,
@@ -263,30 +257,15 @@ h3,
 h1 {
   font-family: "Fredoka", sans-serif;
   font-size: 68px;
-} //sets font family and defaults to 64px get overwritten in bs
-@media (max-width: 767.98px) {
-  h2 {
-    font-size: 44px;
-  }
-  .collection-delivery .btn {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-} //alters fs for mobile
+} //sets font family and defaults to 64px get overwritten in b.s
+hr.underline {
+  opacity: 100%;
+  width: 100px; // Set the width to 50 pixels
+  border: none; // Remove default border
+  height: 6px; // Set the height/thickness of the line
+} //header underline
 
-.imageMain {
-  background-image: url(../images/headerCropped.jpg);
-  background-size: cover;
-} //image for header
 
-.navbar {
-  backdrop-filter: blur(2px);
-} //adds blur to nav
-@media (max-width: 767.98px) {
-  .navbar {
-    background-color: white; /* Color for mobile devices */
-  }
-} //change colour of nav for mobile
 
 //footer
 footer {
@@ -298,7 +277,63 @@ footer {
   }
 } //alters the icon hover
 
-//all these target the visibilty of the products
+
+
+//MOBILE RESPONSIVENESS
+
+@media (max-width: 767.98px) {
+  .testimonials .backgroundColor {
+    height: 365px;
+  }
+}
+@media (max-width: 767.98px) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    opacity: 0.1;
+  }
+} //changes carousel svg opacity on mobile responsive
+@media (max-width: 767.98px) {
+  .products .carousel-item {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+} //changes carousel padding on mobile responsive
+//testimonial section
+@media (max-width: 767.98px) {
+  .cateringOverflow {
+    align-items: center;
+    flex-direction: column; // Stacking the text vertically
+    text-align: center; // Center-aligning the text
+
+    h2 {
+      margin: 5px 0; // Adding some margin between stacked texts
+    }
+  }
+} //handles header overflow mobile
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: white; /* Color for mobile devices */
+  }
+} //change colour of nav for mobile
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 44px;
+  }
+  .collection-delivery .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+} //alters fs for mobile
+@media (max-width: 767.98px) {
+  hr .cart {
+    padding-top: 50px;
+    padding-bottom:50px;  
+  }
+}
+
+
+//FOR PRODUCTS ON HOMEPAGE
+
 .chicken-prod {
   display: none;
 }
